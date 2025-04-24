@@ -2,8 +2,8 @@
 
 ## Technologies utilisées
 
-NodeJS - https://nodejs.org/fr
-Tailwind CSS - https://tailwindcss.com/plus
+[NodeJS](https://nodejs.org/fr)
+[Tailwind CSS](https://tailwindcss.com/plus)
 
 ## Sites références
 
