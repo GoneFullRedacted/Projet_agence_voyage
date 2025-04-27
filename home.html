@@ -7,53 +7,49 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <header class="flex flex-col text-center gap-5 bg-cover bg-no-repeat bg-center bg-[url('/medias/bg_images/bg_header_normal.jpg')]">
-        <nav class="bg-transparent flex justify-between  p-4  text-center blur-xs">
-            <a href="" class="header_logo text-6xl self-center">✈ AirAdventures ✈ <img src="" alt=""></a>
+    <header class="flex flex-col justify-center text-center gap-5 bg-cover bg-no-repeat bg-center bg-[url('/medias/bg_images/header_bg_animated.mp4')] relative pb-[25em]">
+        <div class="absolute inset-0 -z-10 overflow-hidden contrast-100 saturate-50">
+            <video autoplay muted loop id="myVideo" class="object-center object-cover w-full h-full ">
+                <source src="./medias/bg_images/header_bg_animated.mp4" type="video/mp4">
+            </video>
+        </div>
+        <nav id="mainNav" class="flex justify-between  p-4  text-center sticky top-0 z-50 transition-colors duration-300 bg-transparent">
+            <a href="" class="header_logo text-6xl self-center">✈ Evasion  <img src="" alt=""></a>
             <ul class="flex gap-20 mr-25 self-center">
                 <li><a href="">1</a></li>
                 <li><a href="">2</a></li>
                 <li><a href="">3</a></li>
                 <li><a href="">4</a></li>
             </ul>
-
         </nav>    
-        <h1 class="text-4xl">Bienvenue sur <br><span class="text-5xl text-blue-950">Explorateurs de l'inattendu </span></h1>
-        <article class="bg-white opacity-65 mt-5">
-            <p class="opacity-100">Préparez-vous à sortir de votre zone de confort et à embarquer pour des aventures hors du commun !</p>
-            <p class="opacity-100">Nous sommes là pour inspirer et guider les aventuriers dans leur quête de destinations uniques et méconnues. </p>
+        <h1 class="text-6xl text-white mt-16">Bienvenue sur <br><span class="text-6xl text-blue-950">Explorateurs de l'inattendu </span></h1>
+        <article class="flex flex-col bg-black opacity-65 mt-10 mb-16 text-white w-fit self-center shadow-black">
+            <p class="opacity-100 w-[45ch] text-3xl p-5">Préparez-vous à sortir de votre zone de confort et à embarquer pour des aventures hors du commun !</p>
+            <p class="opacity-100 w-[45ch] text-3xl p-5">Nous sommes là pour inspirer et guider les aventuriers dans leur quête de destinations uniques et méconnues. </p>
         </article>
     </header>
-    <section id="destination">
-        <div>
-            <article>
-                <figure>
-                    <img src="" alt="">
-                    <figcaption>
-                        <h4></h4>
-                        <p></p>
-                    </figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="" alt="">
-                    <figcaption>
-                        <h4></h4>
-                        <p></p>
-                    </figcaption>
-                </figure>
-            </article>
-            <article>
-                <figure>
-                    <img src="" alt="">
-                    <figcaption>
-                        <h4></h4>
-                        <p></p>
-                    </figcaption>
-                </figure>
-            </article>
-        </div>
+    <section id="destination" class="flex flex-col gap-20 mt-10">
+        <figure class="flex justify-center items-center gap-20 ">
+            <img src="./medias/bg_images/bg_header_small.jpg" alt="" class="shadow-2xs shadow-zinc-200 rounded-4xl">
+            <figcaption class="bg-zinc-200/50 text-black text-center p-4 backdrop-blur-sm shadow-2xs shadow-zinc-200 rounded-4xl">
+                <h4 class="text-5xl text-blue-950">🏝 Socotra, Yémen</h4>
+                <p class="max-w-[45ch] text-3xl">"Voyagez hors du temps sur une île aux allures d’un autre monde. Socotra, là où la nature réinvente la magie."</p>
+            </figcaption>
+        </figure>
+        <figure class="flex justify-center items-center gap-20">
+            <img src="./medias/bg_images/bg_header_small.jpg" alt="" class="shadow-2xs shadow-zinc-200 rounded-4xl">
+            <figcaption class="bg-zinc-100/50 text-black text-center p-4 backdrop-blur-sm shadow-2xs shadow-zinc-200 rounded-4xl">
+                <h4 class="text-5xl text-blue-950">❄️ Yakoutsk, Sibérie</h4>
+                <p class="max-w-[45ch] text-3xl">"Osez l’extrême : vivez l’hiver le plus glacé de la planète au cœur d’un décor polaire fascinant."</p>
+            </figcaption>
+        </figure>
+        <figure class="flex justify-center items-center gap-20">
+            <img src="./medias/bg_images/bg_header_small.jpg" alt="" class="shadow-2xs shadow-zinc-200 rounded-4xl">
+            <figcaption class="bg-zinc-200/50 text-black text-center p-4 backdrop-blur-sm shadow-2xs shadow-zinc-200 rounded-4xl">
+                <h4 class="text-5xl text-blue-950">🌋 Danakil, Éthiopie</h4>
+                <p class="max-w-[45ch] text-3xl">"Entrez dans les entrailles de la Terre : le Danakil vous dévoile ses paysages de feu et de sel, entre mystère et beauté brutale."</p>
+            </figcaption>
+        </figure>
     </section>
 
     <section id="conseil">
@@ -158,5 +154,6 @@
             </article>
         </div>
     </footer>
+<script src="./js/navscroll.js"></script>
 </body>
 </html>
