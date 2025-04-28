@@ -1,0 +1,257 @@
+  *, 
+  *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+   /* .................Contact section................ */
+    #contact {
+        background-color: #d9d9d9;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        width: 100%;
+        padding: 70px 0;
+        flex-direction: column;
+    }
+    
+    #contact h2 {
+        color: #333;
+        font-family: 'montserrat-extrabold';
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        z-index: 1;
+    }
+
+    #contact h2 span {
+        font-family: 'montserrat-bold';
+        font-size: 28px;
+        color: #3e3e3e;
+    }
+
+    .contact_form {
+        align-items: center;
+        margin: 50px auto 0;
+        border-radius: 20px;
+        background-color: #fff;
+        width: 550px;
+        border-collapse: collapse;
+        box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
+
+    }
+    
+    .message {
+        margin-top: 10px;
+        width: 550px;
+        font-family: 'montserrat-bold';
+        font-size: 20px;
+        color: #3f3e3e;
+        font-weight: 600;
+        text-align: center;
+
+    }
+    
+    .message textarea {
+        border-radius: 25px 25px 0 25px;
+        font-family: 'montserrat-medium';
+        font-size: 18px;
+        width: 540px;
+        height: 100px;
+        border: none;
+        resize: none;
+        padding: 10px;
+        margin-top: 2px;
+    }
+
+    .message textarea:focus {
+        outline: none;
+        border: #131c46 2px solid;
+    }
+
+    .email input:focus {
+        outline: none;
+        border-top: #131c46 2px solid;
+    }
+
+    
+    .email {
+        border-radius: 0 0 20px 20px;
+        align-self: center;
+        display: flex;
+        width: 550px;
+        flex-wrap: nowrap;
+    
+
+    }
+    
+    .email input {
+        border-radius: 20px 20px 0;
+        color: #3f3e3e;
+        font-family: 'montserrat-medium';
+        font-size: 18px;
+        font-weight: 400;
+        margin: auto 5px;
+        width: 420px;
+        padding: 10px 15px;
+        border: none;
+        box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.09);
+    }
+    
+    /* ........contact send button......... */
+    .send_button {
+        border-radius: 20px 0 20px 0;
+        background-color: #3e3e3e;
+        padding: 9px 20px;
+        font-size: 20px;
+        color: #fff;
+        font-family: 'montserrat-bold';
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .send_button:hover {
+        background-color: #131c46;
+    }
+    
+
+    /* ......................Footer......................*/
+    footer {
+        background-color: #d9d9d9;
+        display: flex;
+        width: 100%;
+        padding: 70px 0 10px;
+        align-items: center;
+        gap: 80px;
+        flex-direction: column;
+    }
+
+    .footer_for_all {
+        display: flex;
+        gap: 50px;
+    }
+
+    .footer_menu_logo {
+        gap: 50px;
+    }
+    
+    .footer_menu {
+        display: flex;
+        text-align: left;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    
+
+    
+    .footer_menu h3, .footer_logo_links h3 {
+        color: #333;
+        font-family: 'montserrat-bold';
+        font-size: 20px;
+        font-weight: 700;
+        text-align: start;
+    }
+    
+    .footer_links {
+        list-style-type: none;
+        width: 100%;
+        color: #3e3e3e;
+        font-family: 'montserrat-medium';
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 10px;
+        text-wrap: nowrap;
+    }
+
+   .footer_text {
+        color: #3e3e3e;
+        font-family: 'montserrat-medium';
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    .footer_links a, .footer_text a, .rights a{
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer_links a:hover, .footer_text a:hover, .rights a:hover {
+        color: #131c46;
+        font-weight: 800;
+    }
+   
+
+    /* .....space between contact and partners...... */
+    .footer_menu figure figcaption:last-child {
+        margin-top: 25px;
+    }
+    
+    .footer_logo_links {
+        display: flex;
+        height: 75px;
+        min-width: 240px;
+        align-items: center;
+        gap: 60px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .social_logo {
+        max-width: 45px;
+        max-height: 45px;
+        color: #3e3e3e;
+        object-position: center;
+        margin: auto 0;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .footer_logo_links img {
+        height: 95px;
+        width: 100px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+    }
+    
+    /* ......scale animation for interative elements....... */ 
+    .social_logo:hover, 
+    .footer_logo_links img:hover {
+        transform: scale(1.2);
+    }
+
+    
+    .about_us h2 {
+        font-family: 'montserrat-bold';
+        font-size: 38px;
+        color: #333;
+        margin: -10px 0 10px;
+    }
+
+    .about_us p {
+        font-family: 'poppins-medium';
+        font-size: 15;
+        color: #3e3e3e;
+        line-height: 28px;
+        text-align: justify;
+        width: 360px;
+    }
+    
+    .rights a {
+        color: #3e3e3e;
+        font-family: 'montserrat-regular';
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
