@@ -9,7 +9,7 @@
 <body>
     <header class="flex flex-col justify-center text-center gap-5 bg-cover bg-no-repeat bg-center bg-[url('/medias/bg_images/header_bg_animated.mp4')] relative pb-[25em]">
         <div class="absolute inset-0 -z-10 overflow-hidden contrast-100 saturate-50">
-            <video autoplay muted loop id="myVideo" class="object-center object-cover w-full h-full ">
+            <video autoplay muted loop id="myVideo" class="object-center object-cover w-full h-full">
                 <source src="./medias/bg_images/header_bg_animated.mp4" type="video/mp4">
             </video>
         </div>
@@ -27,6 +27,102 @@
             <p class="opacity-100 w-[45ch] text-3xl p-5">Préparez-vous à sortir de votre zone de confort et à embarquer pour des aventures hors du commun !</p>
             <p class="opacity-100 w-[45ch] text-3xl p-5">Nous sommes là pour inspirer et guider les aventuriers dans leur quête de destinations uniques et méconnues. </p>
         </article>
+        <div class="flex self-center items-center bg-black opacity-65 z-30 text-white w-fit p-5 gap-5 mb-16">
+            <p class="mr-10">Saisissez votre</p>
+            <form action="" method="get" class="flex">
+                <div class="">
+                  <input type="text" name="name" id="name" placeholder="Ville de départ" required />
+                </div>
+                <div class="">
+                  <input type="text" name="text" id="text" placeholder="Durée" required />
+                </div>
+                <div class="">
+                    <input type="date" name="date" id="date" placeholder="Date de départ" required />
+                </div>
+                <div class="pl-5">
+                  <input type="submit" value="Rechercher" />
+                </div>
+              </form>
+        </div>
+        <div class="flex justify-center content-center">
+            <div class="flex justify-center items-center  p-2.5 gap-5 bg-black opacity-65 z-30">
+                <div class="relative inline-block text-left">
+                <!-- Le bouton -->
+                    <button class="menuButton inline-flex justify-center min-w-[25ch] px-4 py-2 text-sm font-medium text-white border-solid border-black border-x-2 hover:bg-blue-950" data-target="menu1">
+                        Séjours 
+                    </button>
+                    <!-- Le menu : caché par défaut grâce à "hidden" -->
+                    <div id="menu1" class="menu hidden absolute left-0 z-10 w-[100%] origin-center bg-black">
+                        <div class="py-1 text-center opacity-100">
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">blablablablablabla</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">Lien 2</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">Lien 3</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="relative inline-block text-left">
+                <!-- Le bouton -->
+                    <button class="menuButton inline-flex justify-center min-w-[25ch] px-4 py-2 text-sm font-medium text-white border-solid border-black border-x-2 hover:bg-blue-950" data-target="menu2">
+                        Vols 
+                    </button>
+                    <!-- Le menu : caché par défaut grâce à "hidden" -->
+                    <div id="menu2" class="menu hidden absolute left-0 z-10 w-[100%] origin-center bg-black">
+                        <div class="py-1 text-center opacity-100">
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">blablablablablabla</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">Lien 2</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">Lien 3</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="relative inline-block text-left">
+                    <!-- Le bouton -->
+                    <button class="menuButton inline-flex justify-center min-w-[25ch] px-4 py-2 text-sm font-medium text-white border-solid border-black border-x-2 hover:bg-blue-950" data-target="menu3">
+                        Circuits 
+                    </button>
+                    <!-- Le menu : caché par défaut grâce à "hidden" -->
+                    <div id="menu3" class="menu hidden absolute left-0 z-10 w-[100%] origin-center bg-black">
+                        <div class="py-1 text-center opacity-100">
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">blablablablablabla</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">Lien 2</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">Lien 3</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="relative inline-block text-left">
+                    <!-- Le bouton -->
+                    <button class="menuButton inline-flex justify-center min-w-[25ch] px-4 py-2 text-sm font-medium text-white border-solid border-black border-x-2 hover:bg-blue-950" data-target="menu4">
+                        Croisières 
+                    </button>
+                    <!-- Le menu : caché par défaut grâce à "hidden" -->
+                    <div id="menu4" class="menu hidden absolute left-0 z-10 w-[100%] origin-center bg-black">
+                        <div class="py-1 text-center">
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">blablablablablabla</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">Lien 2</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">Lien 3</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="relative inline-block text-left">
+                    <!-- Le bouton -->
+                    <button class="menuButton inline-flex z-20 justify-center min-w-[25ch] px-4 py-2 ml-0 text-sm font-medium text-white border-solid border-black border-x-2 hover:bg-blue-950" data-target="menu5">
+                        Locations 
+                    </button>
+                    <!-- Le menu : caché par défaut grâce à "hidden" -->
+                    <div id="menu5" class="menu hidden absolute left-0 z-10 w-[100%] origin-center bg-black ">
+                        <div class="py-1 text-center">
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">blablablablablabla</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">Lien 2</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-950 ">Lien 3</a>
+                        </div>
+                    </div>
+                </div>
+                <a href=""><button class="inline-flex justify-center rounded-md opacity-100 bg-amber-500 px-4 py-2 ml-0 text-sm font-medium text-blue-950 underline decoration-blue-950 underline-offset-5">Planifiez votre voyage</button></a>    
+            </div>
+        </div>
     </header>
     <section id="destination" class="flex flex-col gap-20 mt-10">
         <figure class="flex justify-center items-center gap-20 ">
@@ -155,5 +251,6 @@
         </div>
     </footer>
 <script src="./js/navscroll.js"></script>
+<script src="./js/dropdown.js"></script>
 </body>
 </html>
