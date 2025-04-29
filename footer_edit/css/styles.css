@@ -10,17 +10,26 @@
         text-align: center;
         margin: 80px auto;
         width: 100%;
+        max-width: 1100px;
     }
     
     #services h3 {
         color: #131c46;
         font-family: 'montserrat-extrabold';
-        font-size: 46px;
+        font-size: 56px;
         font-weight: 700;
     }
 
-    .box_services {
-        gap: 50px;
+    .box_services_A {
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box_services_B {
+        gap: 20px;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -30,19 +39,20 @@
     .service {
         display: flex;
         flex-direction: row;
-        width: 550px;
+        width: 500px;
         height: 170px;
-        gap: 30px;
+        gap: 10px;
         border-radius: 20px;
         background-color: #d9d9d9;
         margin-top: 50px;
         box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
-        padding: 12px;
+        padding: 15px;
     }
     
     .service_content {
         width: 320px;
         height: 110px;
+        margin: auto;
     }
     
     .service_content h5 {
@@ -59,7 +69,7 @@
         color: #3E3E3E;
         background-color: #F2EEEE;
         line-height: 25px;
-        padding: 10px;
+        padding: 5px;
         margin-top: 10px;
         box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
     }
@@ -68,9 +78,8 @@
         width: 150px;
         height: 130px;
         border-radius: 20px;
-        border:  #F2EEEE solid;
         box-shadow: 1px 5px 5px;
-        margin-bottom: 5px;
+        margin: auto;
     }
 
 
@@ -83,8 +92,8 @@
     
     #customer_reviews h3 {
         color: #131c46;
-        font-family: 'montserrat-bold';
-        font-size: 30px;
+        font-family: 'montserrat-extrabold';
+        font-size: 46px;
         font-weight: 700;
         line-height: 30px;
     }
@@ -99,22 +108,17 @@
 
     .review {
         width: 210px;
-        height: 350px;
+        height: 370px;
         gap: 30px;
         border-radius: 20px;
-        background-color: #fff;
+        background-color: #d9d9d9;
+        padding: 12px;
         margin-top: 50px;
         box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
     }
     
-    .review figure {
-        background-color: #d9d9d9;
-        padding: 12px;
-        border-radius: 20px;
-    }
-    
     .review_content {
-        width: 185px;
+        margin: auto;
     }
     
     .review_content h5 {
@@ -128,6 +132,7 @@
     }
     
     .review_content p:nth-child(3) {
+        width: 190px;
         font-family: 'montserrat-medium';
         font-size: 18px;
         border-radius: 15px;
@@ -135,8 +140,8 @@
         color: #3E3E3E;
         background-color: #F2EEEE;
         line-height: 25px;
-        padding: 10px;
-        margin-top: 10px;
+        padding: 5px;
+        margin: auto;
         box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
     }
     
