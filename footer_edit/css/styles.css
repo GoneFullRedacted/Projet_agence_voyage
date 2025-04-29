@@ -1,9 +1,79 @@
-  *, 
-  *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+   *, 
+   *::after, *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+   }
+
+    /* ........costomer reviews section............ */
+      #customer_reviews {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 80px auto;
+    }
+    
+    #customer_reviews h3 {
+        color: #131c46;
+        font-family: 'montserrat-bold';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .box_reviews {
+        width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .review {
+        width: 210px;
+        height: 330px;
+        gap: 30px;
+        border-radius: 20px;
+        background-color: #fff;
+        margin-top: 25px;
+    }
+    
+    .review figure {
+        background-color: #d9d9d9;
+        border-radius: 20px;
+    }
+    
+    .review_content {
+        width: 185px;
+    }
+    
+    .review_content h5 {
+        color: #000;
+        font-family: 'montserrat-bold';
+        font-size: 20px;
+    }
+    
+    .review_content p:nth-child(1) {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    
+    .review_content p:nth-child(2) {
+        font-family: 'montserrat-medium';
+        font-size: 18px;
+        font-weight: 500;
+        color: #3E3E3E;
+        background-color: #F2EEEE;
+        line-height: 25px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    
+    .review img {
+        width: 150px;
+        height: 130px;
+        margin: 10px auto 5px;
+        border-radius: 20px;
+        border: 2px #000 solid;
+    }
   
    /* .................Contact section................ */
     #contact {

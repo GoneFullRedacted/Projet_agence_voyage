@@ -24,3 +24,7 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 [Shopify Burst](https://www.shopify.com/stock-photos)
 [Freepik](https://fr.freepik.com/)
 [Pixabay](https://pixabay.com/fr/)
+
+*Logo(s)* :
+[Icones](https://icones8.fr/icons)
+[PostMyWall](https://fr.postermywall.com/)
