@@ -6,6 +6,75 @@
    }
 
     /* ........customer reviews section............ */
+      #services {
+        text-align: center;
+        margin: 80px auto;
+        width: 100%;
+    }
+    
+    #services h3 {
+        color: #131c46;
+        font-family: 'montserrat-extrabold';
+        font-size: 46px;
+        font-weight: 700;
+    }
+
+    .box_services {
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: row;
+        width: 550px;
+        height: 170px;
+        gap: 30px;
+        border-radius: 20px;
+        background-color: #d9d9d9;
+        margin-top: 50px;
+        box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
+        padding: 12px;
+    }
+    
+    .service_content {
+        width: 320px;
+        height: 110px;
+    }
+    
+    .service_content h5 {
+        color: #333;
+        font-family: 'montserrat-bold';
+        font-size: 20px;
+    }
+    
+    .service_content p:nth-child(2) {
+        font-family: 'montserrat-medium';
+        font-size: 18px;
+        border-radius: 15px;
+        font-weight: 500;
+        color: #3E3E3E;
+        background-color: #F2EEEE;
+        line-height: 25px;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .service img {
+        width: 150px;
+        height: 130px;
+        border-radius: 20px;
+        border:  #F2EEEE solid;
+        box-shadow: 1px 5px 5px;
+        margin-bottom: 5px;
+    }
+
+
+    /* ........customer reviews section............ */
       #customer_reviews {
         text-align: center;
         margin: 80px auto;
