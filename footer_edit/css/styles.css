@@ -5,7 +5,94 @@
         box-sizing: border-box;
    }
 
-    /* ........customer reviews section............ */
+
+    /* ..........advise section............. */
+    #advise {
+        margin: 80px;
+        height: 300px;
+        width: 100%;
+        max-width: 1100px;
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+    }
+
+    .advise_title {
+        width: 250px;
+        height: 250px;
+        background-color: #d9d9d9;
+        text-align: center;
+        border-radius: 180px;
+        cursor: pointer;
+        position: absolute; 
+        margin: 80px;
+    }
+
+    .advise_title h4 {
+        font-family: 'montserrat-bold';
+        font-size: 30px;
+        color: #131c46;
+        margin: 80px auto;
+    }
+
+    .advise_content {
+        display: none;
+        width: 950px;
+        height: 250px;
+        background-color: #d9d9d9;
+        text-align: left;
+        padding: 10px 50px 10px 250px;
+        border-radius: 180px;
+        margin-left: 450px;
+    }
+
+    .advise_content p {
+        font-family: 'poppins-medium';
+        font-size: 18px;
+        color: #3E3E3E;
+        padding-bottom: 8px;
+
+    }
+
+    .advise_title:hover+.advise_content,
+    .advise_content:hover {
+        display: block;
+    }
+
+
+
+
+    /* ..........Blog section............. */
+    #blog {
+        padding: 80px;
+        width: 100%;
+        background-color: #d9d9d9;
+    }
+
+    #blog h3 {
+        color: #333;
+        font-family: 'montserrat-extrabold';
+        font-size: 45px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .blog_content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .blog_content p {
+        padding-top: 30px;
+        font-family: 'poppins-medium';
+        font-size: 18px;
+
+    }
+
+
+    /* ........services section............ */
       #services {
         text-align: center;
         margin: 80px auto;
@@ -18,6 +105,7 @@
         font-family: 'montserrat-extrabold';
         font-size: 56px;
         font-weight: 700;
+        padding: 30px;
     }
 
     .box_services_A {
@@ -71,7 +159,7 @@
         line-height: 25px;
         padding: 5px;
         margin-top: 10px;
-        box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.3);
     }
     
     .service img {
@@ -86,7 +174,7 @@
     /* ........customer reviews section............ */
       #customer_reviews {
         text-align: center;
-        margin: 80px auto;
+        margin: 150px auto;
         width: 100%;
     }
     
@@ -100,24 +188,25 @@
 
     .box_reviews {
         gap: 50px;
-        align-items: center;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
+        margin-top: 80px;
     }
 
     .review {
-        width: 210px;
-        height: 370px;
+        max-width: 220px;
+        max-height: 350px;
+        align-items: center;
         gap: 30px;
         border-radius: 20px;
         background-color: #d9d9d9;
         padding: 12px;
-        margin-top: 50px;
         box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
     }
     
     .review_content {
+        align-self: auto;
         margin: auto;
     }
     
@@ -129,10 +218,10 @@
     
     .review_content p:nth-child(2) {
         font-size: 15px;
+        padding: 5px;
     }
     
     .review_content p:nth-child(3) {
-        width: 190px;
         font-family: 'montserrat-medium';
         font-size: 18px;
         border-radius: 15px;
@@ -142,7 +231,7 @@
         line-height: 25px;
         padding: 5px;
         margin: auto;
-        box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.3);
     }
     
     .review img {
@@ -171,7 +260,6 @@
         font-size: 40px;
         font-weight: 800;
         text-align: center;
-        z-index: 1;
     }
 
     #contact h2 span {
