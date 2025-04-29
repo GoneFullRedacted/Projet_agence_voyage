@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agence de voyage</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </head>
 <body>
     <header class="flex flex-col justify-center text-center gap-5 bg-cover bg-no-repeat bg-center bg-[url('/medias/bg_images/header_bg_animated.mp4')] relative pb-[25em]">
@@ -125,22 +126,53 @@
         </div>
     </header>
     <section id="destination" class="flex flex-col gap-20 mt-10">
-        <figure class="flex justify-center items-center gap-20 ">
-            <img src="./medias/bg_images/bg_header_small.jpg" alt="" class="shadow-2xs shadow-zinc-200 rounded-4xl">
+        <figure class="flex justify-center items-center gap-20">
+            <!-- <img src="./medias/bg_images/bg_header_small.jpg" alt="" class="shadow-2xs shadow-zinc-200 rounded-4xl">
+            <div id="map" class=""></div> -->
+            <!-- TEST FLIPPING IMAGE INTO MAP-->
+            <div class="flip-card perspective">
+                <div class="flip-inner duration-300 md:w-[640px] md:h-[640px]">
+                  <div class="flip-front backface-hidden">
+                    <img src="./medias/bg_images/bg_header_normal.jpg" alt="Front Image" class="w-full h-full object-cover rounded-4xl shadow-2xs shadow-zinc-200" />
+                  </div>
+                  <div class="flip-back backface-hidden absolute inset-0">
+                    <a href=""><div id="map" class="w-full h-full rounded-4xl shadow-2xs shadow-zinc-200"></div></a>
+                  </div>
+                </div>
+            </div>
+             <!--FIN TEST -->
             <figcaption class="bg-zinc-200/50 text-black text-center p-4 backdrop-blur-sm shadow-2xs shadow-zinc-200 rounded-4xl">
                 <h4 class="text-5xl text-blue-950">🏝 Socotra, Yémen</h4>
                 <p class="max-w-[45ch] text-3xl">"Voyagez hors du temps sur une île aux allures d’un autre monde. Socotra, là où la nature réinvente la magie."</p>
             </figcaption>
         </figure>
         <figure class="flex justify-center items-center gap-20">
-            <img src="./medias/bg_images/bg_header_small.jpg" alt="" class="shadow-2xs shadow-zinc-200 rounded-4xl">
+            <div class="flip-card perspective">
+                <div class="flip-inner duration-300 md:w-[640px] md:h-[640px]">
+                  <div class="flip-front backface-hidden">
+                    <img src="./medias/bg_images/yakoutsk_bg_normal.jpg" alt="Front Image" class="w-full h-full object-cover rounded-4xl shadow-2xs shadow-zinc-200" />
+                  </div>
+                  <div class="flip-back backface-hidden absolute inset-0">
+                    <a href=""><div id="map2" class="w-full h-full rounded-4xl shadow-2xs shadow-zinc-200"></div></a>
+                  </div>
+                </div>
+            </div>
             <figcaption class="bg-zinc-100/50 text-black text-center p-4 backdrop-blur-sm shadow-2xs shadow-zinc-200 rounded-4xl">
                 <h4 class="text-5xl text-blue-950">❄️ Yakoutsk, Sibérie</h4>
                 <p class="max-w-[45ch] text-3xl">"Osez l’extrême : vivez l’hiver le plus glacé de la planète au cœur d’un décor polaire fascinant."</p>
             </figcaption>
         </figure>
         <figure class="flex justify-center items-center gap-20">
-            <img src="./medias/bg_images/bg_header_small.jpg" alt="" class="shadow-2xs shadow-zinc-200 rounded-4xl">
+            <div class="flip-card perspective">
+                <div class="flip-inner duration-300 md:w-[640px] md:h-[640px]">
+                  <div class="flip-front backface-hidden">
+                    <img src="./medias/bg_images/bg_header_normal.jpg" alt="Front Image" class="w-full h-full object-cover rounded-4xl shadow-2xs shadow-zinc-200" />
+                  </div>
+                  <div class="flip-back backface-hidden absolute inset-0">
+                    <a href=""><div id="map3" class="w-full h-full rounded-4xl shadow-2xs shadow-zinc-200"></div></a>
+                  </div>
+                </div>
+            </div>
             <figcaption class="bg-zinc-200/50 text-black text-center p-4 backdrop-blur-sm shadow-2xs shadow-zinc-200 rounded-4xl">
                 <h4 class="text-5xl text-blue-950">🌋 Danakil, Éthiopie</h4>
                 <p class="max-w-[45ch] text-3xl">"Entrez dans les entrailles de la Terre : le Danakil vous dévoile ses paysages de feu et de sel, entre mystère et beauté brutale."</p>
@@ -250,7 +282,9 @@
             </article>
         </div>
     </footer>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>    
 <script src="./js/navscroll.js"></script>
 <script src="./js/dropdown.js"></script>
+<script src="./js/mapdisplay.js"></script>
 </body>
 </html>
