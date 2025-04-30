@@ -34,7 +34,128 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 
 
 
-  <!---------------------Footer------------------------>
+<!-- ----------advise section-------------- -->
+    <section id="advise">
+        <div class="advise_title">
+            <h4>Conseils<br> pratiques</h4>
+        </div>
+        <div class="advise_content">
+            <p><strong>Préparer son sac, </strong>les essentiels pour des terrains sauvages et imprévisibles.</p>
+            <p><strong>Voyager responsable, </strong>Comment minimiser son impact environnemental et soutenir les communautés locales.</p>
+            <p><strong>Trouver des vols moins chers, </strong>Astuces pour explorer l'inattendu sans vider son compte bancaire.</p>
+        </div>
+    </section>
+
+<!-- ----------blog section-------------- -->
+    <section id="blog">
+        <h3>Blog d'aventure</h3>
+        <article class="blog_content">
+            <p><strong>Article 1 :</strong> Dans les jungles oubliées de Bornéo : un voyage au cœur de la nature sauvage</p>
+            <p><strong>Article 2 :</strong>  le Transsibérien : une aventure au rythme des rails.</p>
+            <p><strong>Article 3 :</strong> "Histoires autour du feu : récits d'aventuriers.</p>
+        </article>
+    </section>
+
+<!-- ----------services section--------------- -->
+    <section id="services">
+        <h3>Nos services</h3>
+        <div class="box_services_A">
+            <figure class="service">
+                <figcaption class="service_content">
+                    <h5>Voyages Personnalisés</h5>
+                    <p>Chaque voyage est conçu selon vos besoins spécifiques.</p>
+                </figcaption>
+                <img src="img/service_perso.png" alt="service">
+            </figure>
+            <figure class="service">
+                <img src="img/service_loca.png" alt="service">
+                <figcaption class="service_content">
+                    <h5>Assurance voyage</h5>
+                    <p>Voyagez en toute sérénité avec nos solutions d'assurance</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="box_services_B">
+            <figure class="service">
+                <img src="img/service_loca.png" alt="service">
+                <figcaption class="service_content">
+                    <h5>Locations</h5>
+                    <p>Des hébergements et des motorisations de qualité pour votre confort.</p>
+                </figcaption>
+            </figure>
+            <figure class="service">
+                <figcaption class="service_content">
+                    <h5>Assistance 24/7</h5>
+                    <p>Nous sommes là pour vous, avant, pendant et après votre voyage</p>
+                </figcaption>
+                <img src="img/service_assist.png" alt="service">
+            </figure>
+            <figure class="service">
+                <figcaption class="service_content">
+                    <h5>Prix Compétitifs</h5>
+                    <p>Vivez des aventures uniques sans casser la banque.</p>
+                </figcaption>
+                <img src="img/service_price.png" alt="service">
+            </figure>
+        </div>     
+    </section>
+
+<!-- ------customer reviews section----------- -->
+    <section id="customer_reviews">
+        <h3>Ce que disent nos clients</h3>
+        <div class="box_reviews">
+            <figure class="review">
+                <img src="img/reviewer_photo (1).png" alt="photo costomer review">
+                <figcaption class="review_content">
+                    <h5>O. Nord</h5>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Très impatiente d’y retourner, allez visiter l’Amazonie sauvage</p>
+                </figcaption>
+            </figure>
+            <figure class="review">
+                <img src="img/reviewer_photo (2).png" alt="photo costomer review">
+                <figcaption class="review_content">
+                    <h5>H. Paul</h5>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Une expérience authentique et inoubliable.</p>
+                </figcaption>
+            </figure>
+            <figure class="review">
+                <img src="img/reviewer_photo (3).png" alt="photo costomer review">
+                <figcaption class="review_content">
+                    <h5>M. Marie</h5>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Un voyage incroyable dans des lieux que je n'aurais jamais imaginés !</p>
+                </figcaption>
+            </figure>
+            <figure class="review">
+                <img src="img/reviewer_photo (4).png" alt="photo costomer review">
+                <figcaption class="review_content">
+                    <h5>T. Mathieu</h5>
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Tokyo était incroyable, ses sources chaudes. Allez essayer !</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+      <!------------------ Contact section --------------->
+    <section id="contact" class="flex flex-col w-full py-20 bg-[#D9D9D9]">
+        <h2 class="text-center text-[40px] font-['montserrat-extrabold'] text-[#333]">Besoin d'un dévis,<br><span class="text-[28px] font-['montserrat-bold'] text-[#3E3E3E]">Laissez-nous un message</span></h2>
+        <div class="items-center m-12 mx-auto w-[550px] rounded-3xl bg-white shadow-2xl">
+            <article class="mt-1 font-['montserrat-bold'] text-[20px] text-[#3F3E3E]">
+                <label for="message" class="flex items-center justify-center">Votre message / votre demande</label>
+                <textarea id="message" placeholder="Bonjour !!! Pensez bien à signer votre message (Nom)😃" class="w-[535px] h-[100px] text-[18px] font-['montserrat-medium'] mx-2 p-[10px] mt-2 border-none rounded-l-3xl rounded-tr-3xl focus:outline-none focus:ring-1 focus:ring-indigo-800"></textarea>
+            </article>
+
+            <article class="rounded-br-2xl w-[550px]">
+                <input type="email" id="email" placeholder="Votre adresse e-mail" class="w-[405px] text-[18px] font-['montserrat-medium'] mx-2 border-none rounded-l-3xl rounded-tr-3xl shadow-[0px_10px_30px_rgba(0,0,0,0.5)] bg-white border focus:outline-none focus:ring-1 focus:ring-indigo-800 p-2.5">
+                <button type="submit" class="rounded-br-3xl rounded-tl-3xl text-white font-['montserrat-bold'] py-[9px] px-[20px] text-[20px] bg-[#3E3E3E] hover:bg-[#131C46] transition duration-300">Envoyer</button>
+            </article>
+        </div>
+    </section>
+
+    <!---------------------Footer------------------------>
     <footer class="bg-[#D9D9D9]" >
         <div class="flex w-full items-center flex-row gap-[50px] justify-center">
             <div class="gap-[50px] mb-[40px]">
@@ -127,3 +248,4 @@ npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
             <a href="#" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">©évasion_voyage_by_C&S</a>
         </p>
     </footer>
+
