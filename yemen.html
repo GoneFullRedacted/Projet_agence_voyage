@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </head>
 <body>
+<!-- Fiche destination actuelle -->
+
 <!---------------------Header--------------------->
+
     <header class="flex flex-col justify-center text-center gap-5 bg-cover bg-no-repeat bg-center bg-[url('/medias/bg_images/header_bg_animated.mp4')] relative pb-[25em]">
         <div class="absolute inset-0 -z-10 overflow-hidden contrast-100 saturate-50">
             <video autoplay muted loop id="myVideo" class="object-center object-cover w-full h-full">
@@ -19,6 +22,7 @@
         </div>
 
 <!---------------------NAV--------------------->
+
         <nav id="mainNav" class="flex justify-between  p-4  text-center sticky top-0 z-50 transition-colors duration-300 bg-transparent">
             <a href="" class="header_logo text-6xl self-center">✈ Evasion  <img src="" alt=""></a>
             <ul class="flex gap-20 mr-25 self-center">
@@ -31,9 +35,10 @@
     </header>
 
 <!---------------------SECTION DESTINATION CAROUSSEL--------------------->
-    <section class="flex"> 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe amet aut perferendis! Maxime accusamus soluta ut fuga est non veniam iste. Aspernatur atque provident odit labore aut, quisquam temporibus!
+
+    <section class="flex justify-between items-center px-5 my-5"> 
+            <p class="max-w-[65ch] text-justify ml-[7vw] p-5 font-[montserrat] border-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe amet aut perferendis! Maxime accusamus soluta ut fuga est non veniam iste. Aspernatur atque provident odit labore aut, quisquam temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia cumque id delectus recusandae sunt culpa deleniti vitae soluta dicta suscipit ducimus, labore nulla, qui omnis veritatis voluptatem necessitatibus. Corporis, sit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur praesentium fugit, et earum a quibusdam dolorum expedita consequatur velit culpa totam necessitatibus, quod eius reiciendis! Delectus assumenda facilis beatae veritatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dolore mollitia, exercitationem optio beatae, in dolorum fuga, eos neque recusandae sit! Itaque sunt animi sint? Hic omnis voluptatibus facere iusto.
             </p>
             <div class="carousel-media h-[75vh]">
                 <div class="carousel-images">
@@ -48,23 +53,94 @@
     </section>
 
 <!---------------------SECTION DESTINATION MAP + TOUR--------------------->
-    <section>
-        <div>
-            <div id="nav-items"></div>
-            <div id="map" style="position:relative" class="h-[75vh] w-[75vw]">
-                <div id="info-panel" style="display:none; position:absolute; bottom: 50%;; left:65%; width:25%; background:white; border-top:1px solid #ccc; padding:1rem; box-shadow:0 -2px 5px rgba(0,0,0,0.1); z-index:1000;"></div>
-            </div>
-            <div id="legend"></div>
-            <div id="info-panel" style="display:none; position:absolute; bottom:0; left:0; width:100%; background:white; border-top:1px solid #ccc; padding:1rem; box-shadow:0 -2px 5px rgba(0,0,0,0.1); z-index:1000;"></div>
+
+<section>
+    <div class="overflow-clip">
+      
+<!---------------------Bloc navigation -->
+      <div id="nav-items" class="p-10"></div>
+  
+<!---------------------Conteneur carte + panneau -->
+      <div id="map-container" class="flex h-[75vh] w-full">
+  
+<!---------------------Carte -->
+        <div id="map" class="ml-1 grow-[2] w-3/4" ></div>
+<!---------------------Panneau d'information (hors de la carte) -->
+        <div id="info-panel" class="w-1/4 p-4 bg-white shadow-md overflow-y-auto hidden"></div>
+      </div>
+  
+<!---------------------Légende -->
+      <div id="legend"></div>
+  
+    </div>
+  </section>
+
+<!---------------------Section infos voyages (take care of)--------------------->
+
+    <section class="flex justify-center gap-5 mt-10">
+        <div class="flex flex-col items-center">
+            <img src="./medias/logos/passport.svg" alt="" class="w-1/6">
+            <div class="h-1 bg-black w-[75%] my-5"></div>
+            <p></p>
+            <div class="h-1 bg-black w-[50%] my-5"></div>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./medias/logos/vaccine.svg" alt="" class="w-1/6">
+            <div class="h-1 bg-black w-[75%] my-5"></div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="h-1 bg-black w-[50%] my-5"></div>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./medias/logos/currency.svg" alt="" class="w-1/6">
+            <div class="h-1 bg-black w-[75%] my-5"></div>
+<!---------------------Bloc conversion devises -------------------->
+            <div id="destination-card" data-currency="JPY" class="hidden"></div>
+            <section class="bg-white p-4 rounded-xl shadow-md w-full max-w-md mx-auto mt-10">
+                <h2 class="text-lg font-semibold mb-3">💱 Taux de change</h2>
+            
+                <div class="mb-4">
+                <label for="userCurrency" class="block mb-1 text-sm text-gray-600">Votre monnaie</label>
+                <select id="userCurrency" class="w-full p-2 border rounded">
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="USD">Dollar (USD)</option>
+                    <option value="GBP">Livre (GBP)</option>
+                    <option value="CAD">Dollar canadien (CAD)</option>
+                    <option value="JPY">Yen (JPY)</option>
+                </select>
+                </div>
+            
+                <div class="mb-4">
+                <label for="destinationCurrency" class="block mb-1 text-sm text-gray-600">Monnaie destination</label>
+                <select id="destinationCurrency" class="w-full p-2 border rounded">
+                    <option value="JPY">Japon (JPY)</option>
+                    <option value="USD">États-Unis (USD)</option>
+                    <option value="MAD">Maroc (MAD)</option>
+                    <option value="THB">Thaïlande (THB)</option>
+                    <option value="IDR">Indonésie (IDR)</option>
+                </select>
+                </div>
+            
+                <div id="conversionResult" class="text-sm text-gray-700 font-medium">
+                Chargement du taux...
+                </div>
+            </section>
+            <div class="h-1 bg-black w-[50%] my-5"></div>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./medias/logos/phone.svg" alt="" class="w-1/6">
+            <div class="h-1 bg-black w-[75%] my-5"></div>
+            <p></p>
+            <div class="h-1 bg-black w-[50%] my-5"></div>
         </div>
     </section>
 
-<!---------------------Section infos voyages (take care of)--------------------->
-    <section>
-
-    </section>
-    
 <!---------------------Footer------------------------>
+
 <footer class="bg-[#D9D9D9] p-[10px] mt-10" >
     <div class="flex w-full items-center flex-row gap-[50px] justify-center">
         <div class="gap-[50px] mb-[40px]">
@@ -163,7 +239,8 @@
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>    
 <script src="./js/navscroll.js"></script>
 <script src="./js/dropdown.js"></script>
-<script src="./js/maptour..js"></script>
+<script src="./js/maptour.js"></script>
 <script src="./js/carroussel.js"></script>
+<script src="./js/currency.js"></script>
 </body>
 </html>
