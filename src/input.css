@@ -23,3 +23,47 @@
   .flip-back {
     transform: rotateY(180deg);
   }
+
+
+  .advise_title {
+
+      transition: box-shadow 0.5s ease, transform 0.3s ease;
+  }
+
+
+
+  .advise_content {
+      visibility: hidden;
+      opacity: 0;
+
+      transform-origin: center; /*......expansion from center...... */
+      transition: all 0.7s ease;
+    
+  }
+
+  /* ........advise content expandable............ */
+  .advise_content:hover,
+  .advise_title:hover+.advise_content {
+      visibility: visible;
+      opacity: 1;
+      width: 820px;
+      height: 250px;
+      padding-left: 270px;
+      transform: scale(1.05);
+      animation: in-ease-out 0.5s ease-out;
+  }
+
+  .advise_title:hover {
+      transform: scale(1.05);
+      animation: in-ease-out 0.5s ease-out;
+      box-shadow: none;
+  }
+
+  @keyframes in-ease-out {
+      0%, 100% {
+          transform: scale(1.05) translateY(0);
+      }
+      50% {
+          transform: scale(1.1) translateY(-10px);
+      }
+  }
