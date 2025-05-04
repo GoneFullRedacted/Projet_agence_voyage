@@ -3,21 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Evasion Voyage</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- ----------advise section-------------- -->
-    <section id="advise">
-        <div class="advise_title">
-            <h4>Conseils<br> pratiques</h4>
+<!-- -------cookies section------------- -->
+    <section class="cookie-modal" id="cookieModal">
+        <div class="content">
+            <p><strong>Politique de cookies 🍪</strong>
+                <br><br>Bienvenue sur notre site ! Nous utilisons des cookies pour améliorer votre expérience, 
+                analyser notre trafic et personnaliser votre contenu. 
+
+                <br><br><strong>Pourquoi utilisons-nous des cookies ?</strong>
+                <br><br>Les cookies nous permettent de :
+                <br><strong>- Assurer le bon fonctionnement du site</strong> (cookies essentiels).
+                <br><strong>- Analyser le trafic et les performances</strong> pour améliorer l’expérience utilisateur.
+                <br><strong>- Personnaliser votre expérience</strong> en adaptant le contenu à vos préférences.
+                <br><strong>- Proposer des publicités pertinentes</strong> adaptées à vos centres d’intérêt.
+
+                <br><br><strong>Vos choix en matière de cookies</strong>
+                <br><br>Vous avez le contrôle ! Vous pouvez :
+                <br>✅ <strong>Accepter tous les cookies</strong> pour profiter pleinement de notre site.  
+                <br>⚙️ <strong>Personnaliser vos préférences</strong> et choisir les types de cookies que vous souhaitez autoriser.  
+                <br>❌ <strong>Refuser les cookies non essentiels</strong> si vous préférez limiter leur utilisation.
+
+                <br>💡 Pour plus d’informations, consultez nos mentions légales.
+            </p>
         </div>
-        <div class="advise_content">
-            <p><strong>Préparer son sac, </strong>les essentiels pour des terrains sauvages et imprévisibles.</p>
-            <p><strong>Voyager responsable, </strong>Comment minimiser son impact environnemental et soutenir les communautés locales.</p>
-            <p><strong>Trouver des vols moins chers, </strong>Astuces pour explorer l'inattendu sans vider son compte bancaire.</p>
+        <div class="buttons">
+            <button class="accept">Tout accepter</button>
+            <button class="reject">Rejeter les cookies non essentiels</button>
+        </div>
+    </section>
+
+<!-- ---------destination section---------------- -->
+    <section id="destination">
+        <h2>Destinations Populaires</h2>
+        <div class="box_destinations">
+            <h4>Choisissez votre prochaine aventure parmi nos destinations exclusives </h4>
+            <figure class="destination_card">
+                <img src="img/bg_header_normal.jpg" alt="Front Image"/>
+                <figcaption class="destination_place">
+                    <h4>🏝 Socotra, Yémen</h4>
+                    <p>
+                        Voyagez hors du temps sur une île aux allures d’un autre monde. Socotra, là où la nature réinvente la magie.
+                        <br><br><strong> < < &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp; Météo 🌤  18°</strong> 
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="destination_card">
+                <figcaption class="destination_place">
+                    <h4>❄️ Yakoutsk, Sibérie</h4>
+                    <p>
+                        Osez l’extrême : vivez l’hiver le plus glacé de la planète au cœur d’un décor polaire fascinant.
+                        <br><br><strong> Météo 🌤  12°&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp; > > </strong> 
+                    </p>
+                </figcaption>
+                <img src="img/yakoutsk_bg_normal.jpg" alt="Front Image"/>
+            </figure>
+            <figure class="destination_card">
+                <img src="img/bg_header_normal.jpg" alt="Front Image"/>
+                <figcaption class="destination_place">
+                    <h4>🌋 Danakil, Éthiopie</h4>
+                    <p>
+                        Entrez dans les entrailles de la Terre : le Danakil vous dévoile ses paysages de feu et de sel, 
+                        entre mystère et beauté brutale.
+                        <br><br><strong> < < &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Météo 🌤  22°</strong> 
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+<!-- ----------advise section-------------- -->
+    <section id="advice">
+        <div class="practical_advice">
+            <div class="advice_title">
+                <h4>Conseils<br>Pratiques</h4>
+            </div>
+            <div class="advice_content">         
+                <p>
+                    Réservez vos vols 2 à 3 mois à l'avance pour bénéficier 
+                    des meilleurs tarifs. 
+                </p>
+                <p>
+                    Optez pour des passes de transport public en ville et des 
+                    locations de voiture anticipées pour les zones reculées.
+                </p>
+                <p>
+                    Inscrivez-vous aux alertes de prix et restez flexible sur 
+                    vos dates de voyage pour obtenir de meilleures offres.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -55,7 +140,7 @@
                 <img src="img/service_loca.png" alt="service">
                 <figcaption class="service_content">
                     <h5>Locations</h5>
-                    <p>Des hébergements et des motorisations de qualité pour votre confort.</p>
+                    <p>Des hébergements et des moyens de transport de qualité pour votre confort.</p>
                 </figcaption>
             </figure>
             <figure class="service">
@@ -223,7 +308,6 @@
             <a href="#">©évasion_voyage_by_C&S</a>
         </p>
     </footer>
-</body>
-</html>
+    <script src="cookies.js"></script>
 </body>
 </html>

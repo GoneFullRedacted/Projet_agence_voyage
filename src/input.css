@@ -25,47 +25,56 @@
   }
 
 
-  .advise_title {
-
-      transition: box-shadow 0.5s ease, transform 0.3s ease;
+  .practical_advice {
+    transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275); /*Ease with light bounce */
+    animation: ease-bounce 0.5s ease-out infinite;
   }
 
-
-
-  .advise_content {
-      visibility: hidden;
-      opacity: 0;
-
-      transform-origin: center; /*......expansion from center...... */
-      transition: all 0.7s ease;
-    
-  }
-
-  /* ........advise content expandable............ */
-  .advise_content:hover,
-  .advise_title:hover+.advise_content {
-      visibility: visible;
-      opacity: 1;
-      width: 820px;
-      height: 250px;
-      padding-left: 270px;
+  @keyframes ease-bounce {
+    0%, 100% {
       transform: scale(1.05);
-      animation: in-ease-out 0.5s ease-out;
+    }
+    50% {
+      transform: scale(1.1);
+    }
   }
 
-  .advise_title:hover {
-      transform: scale(1.05);
-      animation: in-ease-out 0.5s ease-out;
-      box-shadow: none;
+  /* ......Expanded width (640px with scale= 800px)......... */
+  .practical_advice:hover {
+    transform: scale(1.25);
+    margin-left: 80px;
+    width: 640px;
+    animation: none;
   }
 
-  @keyframes in-ease-out {
-      0%, 100% {
-          transform: scale(1.05) translateY(0);
-      }
-      50% {
-          transform: scale(1.1) translateY(-10px);
-      }
+  .advice_content {
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  /* ......unhide advice content......... */
+  .practical_advice:hover .advice_content {
+    max-width: 432px;
+    opacity: 1;
+  }
+
+  .advice_content p {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.5s ease;
+    transition-delay: 0.3s;
+  }
+
+  .advice_content p:nth-child(2) {
+    transition-delay: 0.5s;
+  }
+
+  .advice_content p:nth-child(3) {
+    transition-delay: 0.7s;
+  }
+
+  .practical_advice:hover .advice_content p {
+    opacity: 1;
+    transform: translateX(0);
   }
 
 
