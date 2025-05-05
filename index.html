@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </head>
-<body>
-    <header class="flex flex-col justify-center text-center gap-5 bg-cover bg-no-repeat bg-center bg-[url('/medias/bg_images/header_bg_animated.mp4')] relative pb-[25em]">
+<body class="">
+    <header class="flex flex-col justify-center text-center gap-5 bg-cover bg-no-repeat bg-center bg-[url('/medias/bg_images/header_bg_animated.mp4')] relative pb-[25em] font-[montserrat-regular] text-[0.6rem]">
         <div class="absolute inset-0 -z-10 overflow-hidden contrast-100 saturate-50">
             <video autoplay muted loop id="myVideo" class="object-center object-cover w-full h-full">
                 <source src="./medias/bg_images/header_bg_animated.mp4" type="video/mp4">
             </video>
         </div>
-        <nav id="mainNav" class="flex justify-between  p-4  text-center sticky top-0 z-50 transition-colors duration-300 bg-transparent">
-            <a href="" class="header_logo text-6xl self-center">✈ Evasion  <img src="" alt=""></a>
+        <nav id="mainNav" class="flex justify-between  p-4 text-blue-950 text-center sticky top-0 z-50 transition-colors duration-300 bg-transparent">
+            <a href="" class="header_logo text-6xl self-center ">✈ Evasion  <img src="" alt=""></a>
             <ul class="flex gap-20 mr-25 self-center">
                 <li><a href="">1</a></li>
                 <li><a href="">2</a></li>
@@ -24,10 +24,10 @@
                 <li><a href="">4</a></li>
             </ul>
         </nav>    
-        <h1 class="text-6xl text-white mt-16">Bienvenue sur <br><span class="text-6xl text-blue-950">Explorateurs de l'inattendu </span></h1>
-        <article class="flex flex-col bg-black opacity-65 mt-10 mb-16 text-white w-fit self-center shadow-black">
-            <p class="opacity-100 w-[45ch] text-3xl p-5">Préparez-vous à sortir de votre zone de confort et à embarquer pour des aventures hors du commun !</p>
-            <p class="opacity-100 w-[45ch] text-3xl p-5">Nous sommes là pour inspirer et guider les aventuriers dans leur quête de destinations uniques et méconnues. </p>
+        <h1 class="text-[3.6rem] text-white mt-16 font-[montserrat-bold]">Bienvenue pour <br><span class="text-[1.6em] text-blue-950 underline decoration-1 decoration-blue-950/75 underline-offset-16">L'Evasion </span></h1>
+        <article class="flex flex-col bg-black opacity-65 text-[1.6rem] mt-10 mb-16 text-white w-fit self-center shadow-black font-[poppins-regular]">
+            <p class="opacity-100 w-[45ch] p-5">Préparez-vous à sortir de votre zone de confort et à embarquer pour des aventures hors du commun !</p>
+            <p class="opacity-100 w-[45ch] p-5">Nous sommes là pour inspirer et guider les aventuriers dans leur quête de destinations uniques et méconnues. </p>
         </article>
         <div class="flex self-center items-center bg-black opacity-65 z-30 text-white w-fit p-5 gap-5 mb-16">
             <p class="mr-10">Saisissez votre</p>
@@ -46,8 +46,8 @@
                 </div>
               </form>
         </div>
-        <div class="flex justify-center content-center">
-            <div class="flex justify-center items-center  p-2.5 gap-5 bg-black opacity-65 z-30">
+        <div class="flex justify-center self-center w-[75vw]">
+            <div class="flex justify-center items-center bg-black opacity-65 z-30 ">
                 <div class="relative inline-block text-left">
                 <!-- Le bouton -->
                     <button class="menuButton inline-flex justify-center min-w-[25ch] px-4 py-2 text-sm font-medium text-white border-solid border-black border-x-2 hover:bg-blue-950" data-target="menu1">
@@ -122,61 +122,65 @@
                         </div>
                     </div>
                 </div>
-                <a href=""><button class="inline-flex justify-center rounded-md opacity-100 bg-amber-500 px-4 py-2 ml-0 text-sm font-medium text-blue-950 underline decoration-blue-950 underline-offset-5">Planifiez votre voyage</button></a>    
+                <a href=""><button class="inline-flex justify-center rounded-md opacity-100 bg-amber-500 px-4 py-2 ml-0 text-sm font-medium text-blue-950 underline decoration-blue-950 underline-offset-5 cursor-pointer">Planifiez votre voyage</button></a>    
             </div>
         </div>
     </header>
-    <section id="destination" class="flex flex-col gap-20 mt-10">
-        <figure class="flex justify-center items-center gap-20">
-            <!-- TEST FLIPPING IMAGE INTO MAP-->
-            <div class="flip-card perspective">
-                <div class="flip-inner duration-300 md:w-[640px] md:h-[640px]">
-                  <div class="flip-front backface-hidden">
-                    <img src="./medias/bg_images/bg_header_normal.jpg" alt="Front Image" class="w-full h-full object-cover rounded-4xl shadow-2xs shadow-zinc-200" />
-                  </div>
-                  <div class="flip-back backface-hidden absolute inset-0">
-                    <a href="./yemen.html"><div id="map" class="w-full h-full rounded-4xl shadow-2xs shadow-zinc-200"></div></a>
-                  </div>
+    <section id="destination" class="flex flex-col gap-20 mt-10 justify-center items-center ">
+        <h1 class="text-blue-950 text-[5vw] text-center font-[montserrat-bold] underline underline-offset-24 decoration-1 decoration-blue-950/75">Destinations Populaires</h1>
+        <div class="bg-zinc-300 rounded-4xl p-10  w-[80%] gap-24 flex flex-col">
+            <figure class="flex justify-center items-center gap-10">
+                <!-- FLIPPING IMAGE INTO MAP-->
+                <div class="flip-card perspective">
+                    <div class="flip-inner duration-300 w-[32vw] h-[32vh]">
+                    <div class="flip-front backface-hidden">
+                        <img src="./medias/bg_images/bg_header_normal.jpg" alt="Front Image" class="w-full h-full object-cover rounded-4xl shadow-2xs shadow-zinc-200 cursor-pointer" />
+                    </div>
+                    <div class="flip-back backface-hidden absolute inset-0">
+                        <a href="./yemen.html"><div id="map" class="w-full h-full rounded-4xl shadow-2xs shadow-zinc-200 cursor-pointer"></div></a>
+                    </div>
+                    </div>
                 </div>
-            </div>
-             <!--FIN TEST -->
-            <figcaption class="bg-zinc-200/50 text-black text-center p-4 backdrop-blur-sm shadow-2xs shadow-zinc-200 rounded-4xl">
-                <h4 class="text-5xl text-blue-950">🏝 Socotra, Yémen</h4>
-                <p class="max-w-[45ch] text-3xl">"Voyagez hors du temps sur une île aux allures d’un autre monde. Socotra, là où la nature réinvente la magie."</p>
-            </figcaption>
-        </figure>
-        <figure class="flex justify-center items-center gap-20">
-            <div class="flip-card perspective">
-                <div class="flip-inner duration-300 md:w-[640px] md:h-[640px]">
-                  <div class="flip-front backface-hidden">
-                    <img src="./medias/bg_images/yakoutsk_bg_normal.jpg" alt="Front Image" class="w-full h-full object-cover rounded-4xl shadow-2xs shadow-zinc-200" />
-                  </div>
-                  <div class="flip-back backface-hidden absolute inset-0">
-                    <a href=""><div id="map2" class="w-full h-full rounded-4xl shadow-2xs shadow-zinc-200"></div></a>
-                  </div>
+                <!--FIN -->
+                <figcaption class="text-black text-center p-4 rounded-4xl">
+                    <h4 class="text-[4vh] text-nowrap text-blue-950 font-[montserrat-bold] mb-5">🏝 Socotra, Yémen</h4>
+                    <p class="max-w-[45ch] text-[1vh] md:text-[2vh] bg-white rounded-4xl font-[poppins-regular] font-medium p-5 shadow-2xs">"Voyagez hors du temps sur une île aux allures d’un autre monde. Socotra, là où la nature réinvente la magie."<span class="flex flex-row-reverse justify-between font-[montserrat-bold] font-bold pt-5">Météo 🌤  18°<span><<</span></span></p>
+                </figcaption>
+            </figure>
+            <figure class="flex justify-center items-center gap-10">
+                <figcaption class="text-black text-center p-4 rounded-4xl">
+                    <h4 class="text-[4vh] text-nowrap text-blue-950 font-[montserrat-bold] mb-5">❄️ Yakoutsk, Sibérie</h4>
+                    <p class="max-w-[45ch] text-[1vh] md:text-[2vh] bg-white rounded-4xl font-[poppins-regular] font-medium p-5 shadow-2xs">"Osez l’extrême : vivez l’hiver le plus glacé de la planète au cœur d’un décor polaire fascinant." <span class="flex justify-between font-[montserrat-bold] font-bold pt-5">Météo 🌤  18°<span>>></span></span></p>
+                </figcaption>
+                <div class="flip-card perspective">
+                    <div class="flip-inner duration-300 md:w-[32vw] md:h-[32vh]">
+                    <div class="flip-front backface-hidden">
+                        <img src="./medias/bg_images/yakoutsk_bg_normal.jpg" alt="Front Image" class="w-full h-full object-cover rounded-4xl shadow-2xs shadow-zinc-200 cursor-pointer" />
+                    </div>
+                    <div class="flip-back backface-hidden absolute inset-0">
+                        <a href=""><div id="map2" class="w-full h-full rounded-4xl shadow-2xs shadow-zinc-200 cursor-pointer"></div></a>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <figcaption class="bg-zinc-100/50 text-black text-center p-4 backdrop-blur-sm shadow-2xs shadow-zinc-200 rounded-4xl">
-                <h4 class="text-5xl text-blue-950">❄️ Yakoutsk, Sibérie</h4>
-                <p class="max-w-[45ch] text-3xl">"Osez l’extrême : vivez l’hiver le plus glacé de la planète au cœur d’un décor polaire fascinant."</p>
-            </figcaption>
-        </figure>
-        <figure class="flex justify-center items-center gap-20">
-            <div class="flip-card perspective">
-                <div class="flip-inner duration-300 md:w-[640px] md:h-[640px]">
-                  <div class="flip-front backface-hidden">
-                    <img src="./medias/bg_images/bg_header_normal.jpg" alt="Front Image" class="w-full h-full object-cover rounded-4xl shadow-2xs shadow-zinc-200" />
-                  </div>
-                  <div class="flip-back backface-hidden absolute inset-0">
-                    <a href=""><div id="map3" class="w-full h-full rounded-4xl shadow-2xs shadow-zinc-200"></div></a>
-                  </div>
+
+            </figure>
+            <figure class="flex justify-center items-center gap-10">
+                <div class="flip-card perspective">
+                    <div class="flip-inner duration-300 md:w-[32vw] md:h-[32vh]">
+                    <div class="flip-front backface-hidden">
+                        <img src="./medias/bg_images/bg_header_normal.jpg" alt="Front Image" class="w-full h-full object-cover rounded-4xl shadow-2xs shadow-zinc-200 cursor-pointer" />
+                    </div>
+                    <div class="flip-back backface-hidden absolute inset-0">
+                        <a href=""><div id="map3" class="w-full h-full rounded-4xl shadow-2xs shadow-zinc-200 cursor-pointer"></div></a>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <figcaption class="bg-zinc-200/50 text-black text-center p-4 backdrop-blur-sm shadow-2xs shadow-zinc-200 rounded-4xl">
-                <h4 class="text-5xl text-blue-950">🌋 Danakil, Éthiopie</h4>
-                <p class="max-w-[45ch] text-3xl">"Entrez dans les entrailles de la Terre : le Danakil vous dévoile ses paysages de feu et de sel, entre mystère et beauté brutale."</p>
-            </figcaption>
-        </figure>
+                <figcaption class="text-black text-center p-4 rounded-4xl">
+                    <h4 class="text-[4vh] text-nowrap text-blue-950 font-[montserrat-bold] mb-5">🌋 Danakil, Éthiopie</h4>
+                    <p class="max-w-[45ch] text-[1vh] md:text-[2vh] bg-white rounded-4xl font-[poppins-regular] font-medium p-5 shadow-2xs">"Entrez dans les entrailles de la Terre : le Danakil vous dévoile ses paysages de feu et de sel, entre mystère et beauté brutale." <span class="flex flex-row-reverse justify-between font-[montserrat-bold] pt-5">Météo 🌤  18°<span><<</span></span></p>
+                </figcaption>
+            </figure>
+        </div>
     </section>
 
     <!-- ----------advise section-------------- -->
@@ -206,11 +210,11 @@
 
     <!-- ----------blog section-------------- -->
     <section id="blog" class="bg-[#D9D9D9] w-full p-[5rem] shadow-[2px_4px_32px_5px_rgba(0,0,0,0.2)]">
-        <h3 class="text-[45px] text-center text-[#333] font-['montserrat-extrabold']">Blog d'aventure</h3>
-        <article class="blog_content max-w-[800px] pt-[70px] mx-auto text-[18px] text-[#333] font-['poppins-medium']">
-            <p><strong>Article 1 :</strong> Dans les jungles oubliées de Bornéo : un voyage au cœur de la nature sauvage</p>
-            <p class="my-[30px]"><strong>Article 2 :</strong>  le Transsibérien : une aventure au rythme des rails.</p>
-            <p><strong>Article 3 :</strong> "Histoires autour du feu : récits d'aventuriers.</p>
+        <h3 class="text-[3.6rem] text-center text-blue-950 font-['montserrat-extrabold']">Blog d'aventure</h3>
+        <article class="blog_content max-w-[800px] pt-[70px] mx-auto text-[1em] text-black font-['poppins-medium']">
+            <p><strong class="text-blue-950 underline decoration-1">Article 1 :</strong> Dans les jungles oubliées de Bornéo : un voyage au cœur de la nature sauvage</p>
+            <p class="my-[30px]"><strong class="text-blue-950 underline decoration-1">Article 2 :</strong>  le Transsibérien : une aventure au rythme des rails.</p>
+            <p><strong class="text-blue-950 underline decoration-1">Article 3 :</strong> "Histoires autour du feu : récits d'aventuriers.</p>
         </article>
     </section>
 

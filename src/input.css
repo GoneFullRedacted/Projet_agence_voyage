@@ -102,3 +102,10 @@
   .carousel-images img.active {
     opacity: 1;
   }
+
+  @layer base {
+    .root {
+      font-size: clamp(1rem, 2.5vw, 2rem);
+      padding: clamp(1rem, 2vw, 3rem);
+    }
+  }

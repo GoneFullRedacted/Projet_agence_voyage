@@ -7,7 +7,17 @@
 
 // Yemen 
 document.addEventListener('DOMContentLoaded', () => {
-    const map = L.map('map').setView([12.53094, 53.91000], 15);
+    const map = L.map('map', {
+      center: [12.53094, 53.91000], // Yemen
+      zoom: 16,
+      dragging: false,             // désactive le drag
+      touchZoom: false,            // désactive le zoom tactile
+      scrollWheelZoom: false,      // désactive le zoom à la molette
+      doubleClickZoom: false,      // désactive le zoom double clic
+      boxZoom: false,              // désactive le zoom par sélection
+      keyboard: false,             // désactive le contrôle clavier
+      zoomControl: false, 
+    }).setView([12.53094, 53.91000], 15);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap',
     }).addTo(map);
@@ -15,7 +25,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Sibérie
   document.addEventListener('DOMContentLoaded', () => {
-    const map = L.map('map2').setView([62.02671, 129.73225], 16);
+    const map = L.map('map2', {
+      center: [62.02671, 129.73225], // Sibérie
+      zoom: 16,
+      dragging: false,             // désactive le drag
+      touchZoom: false,            // désactive le zoom tactile
+      scrollWheelZoom: false,      // désactive le zoom à la molette
+      doubleClickZoom: false,      // désactive le zoom double clic
+      boxZoom: false,              // désactive le zoom par sélection
+      keyboard: false,             // désactive le contrôle clavier
+      zoomControl: false, 
+    }).setView([62.02671, 129.73225], 16);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap',
     }).addTo(map);
@@ -23,7 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Ethiopie
   document.addEventListener('DOMContentLoaded', () => {
-    const map = L.map('map3').setView([14.25465 ,40.29588], 15);
+    const map = L.map('map3', {
+      center: [14.25465, 40.29588], // Ethiopie
+      zoom: 16,
+      dragging: false,             // désactive le drag
+      touchZoom: false,            // désactive le zoom tactile
+      scrollWheelZoom: false,      // désactive le zoom à la molette
+      doubleClickZoom: false,      // désactive le zoom double clic
+      boxZoom: false,              // désactive le zoom par sélection
+      keyboard: false,             // désactive le contrôle clavier
+      zoomControl: false, 
+    }).setView([14.25465, 40.29588], 15);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap',
     }).addTo(map);
