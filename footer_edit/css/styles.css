@@ -61,6 +61,166 @@
 
 
 
+    /* .............hero section............. */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 3.5rem;
+        background-image: url('/img/bg_images/header_bg_animated.mp4');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        padding-bottom: 25em;
+        font-size: 0.6rem;
+    }
+
+    /*.......background video....... */
+    .video_container {
+        position: absolute;
+        inset: 0;
+        z-index: -10;
+        overflow: hidden;
+        filter: contrast(100%) saturate(50%);
+    }
+
+    /*............navigation...... */
+    .header_nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        padding: 4rem 10rem;
+        color: #131C46;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        transition: background-color 0.3s ease-in-out;
+        background-color: transparent;
+    }
+
+    .header_logo {
+        align-self: center;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+        text-decoration: none;
+    }
+
+    .header_logo img {
+        height: 100px;
+        width: 200px;
+    }
+
+
+    /*.......navigation links........*/
+    .header_menu {
+        display: flex;
+        gap: 5rem;
+        align-self: center;
+        list-style-type: none;
+    }
+
+    .header_menu a {
+        font-family: 'montserrat-semibold';
+        font-size: 20px;
+        color: #131C46;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* ........hero title.......... */
+    header h1 {
+        font-family: 'montserrat-extrabold';
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    header h1 span {
+        font-size: 2.6em;
+        color: #131C46;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: #131C46;
+        text-underline-offset: 16px;
+    }
+
+
+    .hero_step {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        opacity: 0.65;
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        color: white;
+        width: fit-content;
+        align-self: center;
+        box-shadow: 0 0 10px black;
+        border-radius: 30px;
+    }
+
+    .hero_step p {
+        font-family: 'poppins-medium';
+        font-size: 1.2rem;
+        opacity: 1;
+        width: 45ch;
+        padding: 1.25rem;
+    }
+
+    /*........search form.......... */
+    .search {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        background-color: #000;
+        opacity: 0.70;
+        color: #fff;
+        width: fit-content;
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+        border-radius: 50px;
+    }
+
+    .search p {
+        font-family: 'poppins-regular';
+        font-size: 1rem;
+
+    }
+
+    .search form {
+        display: flex;
+        gap: 1rem;
+        font-family: 'poppins-regular';
+        font-size: 1rem;
+    }
+
+    .search form input {
+        background-color: #000;
+        border: 0;
+        color: #fff;
+    }
+
+    .search_button {
+        padding: fit-content;
+        font-size: 1.1rem;
+        background-color: #640c0c;
+        color: #000;
+        border: 0;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .search_button:hover {
+        background-color: #131C46;
+    }
+
+
+
     /* ..........Destination section............ */
     #destination {
         display: flex;
