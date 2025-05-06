@@ -6,7 +6,6 @@
     <title>Agence de voyage</title>
     <link rel="stylesheet" href="footer_edit/css/fonts.css">
     <link rel="stylesheet" href="./src/output.css">
-    <link rel="stylesheet" href="./src/external.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </head>
 <body>
@@ -17,7 +16,7 @@
     <header class="flex flex-col justify-center text-center gap-5 bg-cover bg-no-repeat bg-center bg-[url('/medias/bg_images/header_bg_animated.mp4')] relative pb-[25em]">
         <div class="absolute inset-0 -z-10 overflow-hidden contrast-100 saturate-50">
             <video autoplay muted loop id="myVideo" class="object-center object-cover w-full h-full">
-                <source src="./medias/bg_images/header_bg_animated.mp4" type="video/mp4">
+                <source src="./medias/bg_images/yemen_bg_animated.mp4" type="video/mp4">
             </video>
         </div>
 
@@ -37,9 +36,11 @@
 <!---------------------SECTION DESTINATION CAROUSSEL--------------------->
 
     <section class="flex justify-between items-center px-5 my-5"> 
-            <p class="max-w-[65ch] text-justify ml-[7vw] p-5 font-[montserrat] border-2">
+            <div class=" flex border-2 max-w-[65ch] ml-[5em]">
+            <p class="max-w-[65ch] text-justify m-[1vw] p-5 font-[poppins-regular] border-2 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio saepe amet aut perferendis! Maxime accusamus soluta ut fuga est non veniam iste. Aspernatur atque provident odit labore aut, quisquam temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia cumque id delectus recusandae sunt culpa deleniti vitae soluta dicta suscipit ducimus, labore nulla, qui omnis veritatis voluptatem necessitatibus. Corporis, sit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur praesentium fugit, et earum a quibusdam dolorum expedita consequatur velit culpa totam necessitatibus, quod eius reiciendis! Delectus assumenda facilis beatae veritatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dolore mollitia, exercitationem optio beatae, in dolorum fuga, eos neque recusandae sit! Itaque sunt animi sint? Hic omnis voluptatibus facere iusto.
             </p>
+            </div>
             <div class="carousel-media h-[75vh]">
                 <div class="carousel-images">
                     <img src="./medias/carou_images/yemen_1.jpg" class="active">
@@ -58,7 +59,7 @@
     <div class="overflow-clip">
       
 <!---------------------Bloc navigation -->
-      <div id="nav-items" class="p-10"></div>
+      <div id="nav-items" class="m-16"></div>
   
 <!---------------------Conteneur carte + panneau -->
       <div id="map-container" class="flex h-[75vh] w-full">
@@ -81,17 +82,20 @@
         <div class="flex flex-col items-center">
             <img src="./medias/logos/passport.svg" alt="" class="w-1/6">
             <div class="h-1 bg-black w-[75%] my-5"></div>
-            <p></p>
+            <img src="./medias/logos/green_checkmark.webp" alt="" class="w-1/6">
+            <p>Un passeport en cours de validité est obligatoire pour entrer au Yémen. Aucun visa délivré à l’arrivée. Demande préalable nécessaire.</p>
             <div class="h-1 bg-black w-[50%] my-5"></div>
         </div>
         <div class="flex flex-col items-center">
             <img src="./medias/logos/vaccine.svg" alt="" class="w-1/6">
             <div class="h-1 bg-black w-[75%] my-5"></div>
+            <img src="./medias/logos/green_checkmark.webp" alt="" class="w-1/6">
+            <h5>Recommandé :</h5>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Hépatite A</li>
+                <li>Fièvre typhoïde</li>
+                <li>Tétanos</li>
+                <li>Rage</li>
             </ul>
             <div class="h-1 bg-black w-[50%] my-5"></div>
         </div>
@@ -99,7 +103,7 @@
             <img src="./medias/logos/currency.svg" alt="" class="w-1/6">
             <div class="h-1 bg-black w-[75%] my-5"></div>
 <!---------------------Bloc conversion devises -------------------->
-            <div id="destination-card" data-currency="JPY" class="hidden"></div>
+            <div id="destination-card" data-currency="" class="hidden"></div>
             <section class="bg-white p-4 rounded-xl shadow-md w-full max-w-md mx-auto mt-10">
                 <h2 class="text-lg font-semibold mb-3">💱 Taux de change</h2>
             
@@ -134,7 +138,8 @@
         <div class="flex flex-col items-center">
             <img src="./medias/logos/phone.svg" alt="" class="w-1/6">
             <div class="h-1 bg-black w-[75%] my-5"></div>
-            <p></p>
+            <img src="./medias/logos/green_checkmark.webp" alt="" class="w-1/6">
+            <p>Réseau mobile limité. Connexion internet instable voire inexistante hors de Hadibu. Prévoir batteries externes et cartes SIM locales.</p>
             <div class="h-1 bg-black w-[50%] my-5"></div>
         </div>
     </section>

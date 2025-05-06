@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </head>
-<body class="">
-    <header class="flex flex-col justify-center text-center gap-5 bg-cover bg-no-repeat bg-center bg-[url('/medias/bg_images/header_bg_animated.mp4')] relative pb-[25em] font-[montserrat-regular] text-[0.6rem]">
+<body class="overflow-x-hidden">
+    <header class="flex flex-col justify-center text-center gap-5 bg-cover bg-no-repeat bg-center bg-[url('/medias/bg_images/header_bg_animated.mp4')] relative pb-[25em] font-[montserrat-regular] text-[1rem]">
         <div class="absolute inset-0 -z-10 overflow-hidden contrast-100 saturate-50">
             <video autoplay muted loop id="myVideo" class="object-center object-cover w-full h-full">
                 <source src="./medias/bg_images/header_bg_animated.mp4" type="video/mp4">
             </video>
         </div>
         <nav id="mainNav" class="flex justify-between  p-4 text-blue-950 text-center sticky top-0 z-50 transition-colors duration-300 bg-transparent">
-            <a href="" class="header_logo text-6xl self-center ">✈ Evasion  <img src="" alt=""></a>
+            <a href="" class="header_logo text-[2.6em] self-center ">✈ Evasion  <img src="" alt=""></a>
             <ul class="flex gap-20 mr-25 self-center">
                 <li><a href="">1</a></li>
                 <li><a href="">2</a></li>
@@ -24,12 +24,12 @@
                 <li><a href="">4</a></li>
             </ul>
         </nav>    
-        <h1 class="text-[3.6rem] text-white mt-16 font-[montserrat-bold]">Bienvenue pour <br><span class="text-[1.6em] text-blue-950 underline decoration-1 decoration-blue-950/75 underline-offset-16">L'Evasion </span></h1>
-        <article class="flex flex-col bg-black opacity-65 text-[1.6rem] mt-10 mb-16 text-white w-fit self-center shadow-black font-[poppins-regular]">
+        <h1 class="text-[2.6em] text-white mt-16 font-[montserrat-bold]">Bienvenue pour <br><span class="text-[1.6em] text-blue-950 underline decoration-1 decoration-blue-950/75 underline-offset-16">L'Evasion </span></h1>
+        <article class="flex flex-col bg-black opacity-65 text-[1rem] mt-10 mb-16 text-white w-fit self-center shadow-black font-[poppins-regular] rounded-md">
             <p class="opacity-100 w-[45ch] p-5">Préparez-vous à sortir de votre zone de confort et à embarquer pour des aventures hors du commun !</p>
             <p class="opacity-100 w-[45ch] p-5">Nous sommes là pour inspirer et guider les aventuriers dans leur quête de destinations uniques et méconnues. </p>
         </article>
-        <div class="flex self-center items-center bg-black opacity-65 z-30 text-white w-fit p-5 gap-5 mb-16">
+        <div class="flex self-center items-center bg-black opacity-65 z-30 text-white w-fit p-5 gap-5 mb-16 rounded-md">
             <p class="mr-10">Saisissez votre</p>
             <form action="" method="get" class="flex">
                 <div class="">
@@ -46,11 +46,11 @@
                 </div>
               </form>
         </div>
-        <div class="flex justify-center self-center w-[75vw]">
-            <div class="flex justify-center items-center bg-black opacity-65 z-30 ">
+        <div class="rp:flex justify-center self-center w-[75vw] hidden">
+            <div class="flex justify-center items-center bg-black opacity-65 z-30 rounded-md">
                 <div class="relative inline-block text-left">
                 <!-- Le bouton -->
-                    <button class="menuButton inline-flex justify-center min-w-[25ch] px-4 py-2 text-sm font-medium text-white border-solid border-black border-x-2 hover:bg-blue-950" data-target="menu1">
+                    <button type="button" class="menuButton inline-flex justify-center min-w-[25ch] px-4 py-2 text-sm font-medium text-white border-solid border-black border-x-2 hover:bg-blue-950" data-target="menu1">
                         Séjours 
                     </button>
                     <!-- Le menu : caché par défaut grâce à "hidden" -->
@@ -108,7 +108,7 @@
                     </div>
                 </div>
         
-                <div class="relative inline-block text-left">
+                <div class="relative inline-block text-left ">
                     <!-- Le bouton locations-->
                     <button class="menuButton inline-flex z-20 justify-center min-w-[25ch] px-4 py-2 ml-0 text-sm font-medium text-white border-solid border-black border-x-2 hover:bg-blue-950" data-target="menu5">
                         Locations 
@@ -122,12 +122,12 @@
                         </div>
                     </div>
                 </div>
-                <a href=""><button class="inline-flex justify-center rounded-md opacity-100 bg-amber-500 px-4 py-2 ml-0 text-sm font-medium text-blue-950 underline decoration-blue-950 underline-offset-5 cursor-pointer">Planifiez votre voyage</button></a>    
+                <a href=""><button class="inline-flex justify-center rounded-md opacity-100 bg-amber-500 px-4 py-2 ml-0 text-blue-950 underline decoration-blue-950 underline-offset-5 cursor-pointer">Planifiez votre voyage</button></a>    
             </div>
         </div>
     </header>
-    <section id="destination" class="flex flex-col gap-20 mt-10 justify-center items-center ">
-        <h1 class="text-blue-950 text-[5vw] text-center font-[montserrat-bold] underline underline-offset-24 decoration-1 decoration-blue-950/75">Destinations Populaires</h1>
+    <section id="destination" class="flex flex-col gap-20 mt-10 justify-center items-center">
+        <h1 class="text-blue-950 text-[3.6em] text-center font-[montserrat-bold] underline underline-offset-24 decoration-1 decoration-blue-950/75">Destinations Populaires</h1>
         <div class="bg-zinc-300 rounded-4xl p-10  w-[80%] gap-24 flex flex-col">
             <figure class="flex justify-center items-center gap-10">
                 <!-- FLIPPING IMAGE INTO MAP-->
