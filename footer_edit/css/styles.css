@@ -68,12 +68,9 @@
         justify-content: center;
         text-align: center;
         gap: 3.5rem;
-        background-image: url('/img/bg_images/header_bg_animated.mp4');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         position: relative;
         padding-bottom: 25em;
+        padding-top: 10rem;
         font-size: 0.6rem;
     }
 
@@ -83,6 +80,9 @@
         inset: 0;
         z-index: -10;
         overflow: hidden;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         filter: contrast(100%) saturate(50%);
     }
 
@@ -92,10 +92,11 @@
         justify-content: space-between;
         width: 100%;
         height: 80px;
-        padding: 4rem 10rem;
+        padding: 1rem 10rem;
         color: #131C46;
         text-align: center;
-        position: sticky;
+        position: fixed;
+        opacity: 1;
         top: 0;
         z-index: 50;
         transition: background-color 0.3s ease-in-out;
@@ -110,8 +111,8 @@
     }
 
     .header_logo img {
-        height: 100px;
-        width: 200px;
+        height: 80px;
+        width: 180px;
     }
 
 
@@ -154,9 +155,7 @@
     .hero_step {
         display: flex;
         flex-direction: column;
-        background-color: black;
-        opacity: 0.65;
-        font-size: 1.6rem;
+        background: rgba(0, 0, 0, 0.7);
         margin-top: 1rem;
         color: white;
         width: fit-content;
@@ -166,9 +165,8 @@
     }
 
     .hero_step p {
-        font-family: 'poppins-medium';
+        font-family: 'montserrat-medium';
         font-size: 1.2rem;
-        opacity: 1;
         width: 45ch;
         padding: 1.25rem;
     }
@@ -178,47 +176,142 @@
         display: flex;
         align-self: center;
         align-items: center;
-        background-color: #000;
-        opacity: 0.70;
+        background: rgba(0, 0, 0, 0.7);
         color: #fff;
         width: fit-content;
         gap: 1rem;
-        padding: 1rem 1.5rem;
         border-radius: 50px;
     }
 
     .search p {
-        font-family: 'poppins-regular';
+        font-family: 'montserrat-medium';
         font-size: 1rem;
-
+        padding: 0.9rem 1.5rem;
     }
 
     .search form {
         display: flex;
         gap: 1rem;
-        font-family: 'poppins-regular';
         font-size: 1rem;
+        align-items: center;
     }
 
-    .search form input {
-        background-color: #000;
+    .search_input {
+        font-family: 'montserrat-medium';
+        background: rgba(0, 0, 0, 0);
         border: 0;
         color: #fff;
+        padding: 0.5rem 0rem;
+        width: 110px;
+    }
+
+    .search_input:focus {
+        outline: none;
+        border-bottom: #fff 1px solid;
     }
 
     .search_button {
-        padding: fit-content;
+        font-family: 'montserrat-bold';
+        padding: 1rem 1.5rem;
         font-size: 1.1rem;
-        background-color: #640c0c;
-        color: #000;
+        background-color: #FFF ;
+        color: #333;
         border: 0;
         transition: background-color 0.3s ease-in-out;
+        border-radius: 0 50px 50px 0;
+        cursor: pointer;
     }
 
     .search_button:hover {
         background-color: #131C46;
+        color: #fff;
     }
 
+
+    /* ..........travel_plan container..... */
+    .travel_plan {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        width: fit-content;
+        padding-left: 0.8rem;
+        gap: 1rem;
+        border-radius: 50px;
+    }
+
+    .travel_menu {
+        display: inline-block;
+        position: relative;
+    }
+
+    .menuButton {
+        font-family: 'montserrat-medium';
+        font-size: 1rem;
+        background: rgba(0, 0, 0, 0);
+        width: 100px;
+        border: 0;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+
+    .menuButton:hover {
+        border-top: #fff 1px solid;
+    }
+
+    /* .....expanded menu....... */
+    .menu {
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        transform-origin: center;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 20px;
+    }
+
+    /* ........hide menu from travel plan....... */
+    .hidden {
+        visibility: hidden;
+    }
+
+    .menu a {
+        display: block;
+        padding: 0.5rem;
+        font-family: 'montserrat-medium';
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        background-color: #fff;
+        color: #333;
+        border-radius: 20px;
+        
+    }
+
+    .plan_button {
+        font-family: 'montserrat-bold';
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+        background-color: #FFF ;
+        color: #333;
+        border: 0;
+        transition: background-color 0.3s ease-in-out;
+        border-radius: 0 50px 50px 0;
+        cursor: pointer;
+    }
+
+    .plan_button:hover {
+        background-color: #131C46;
+        color: #fff;
+    }
 
 
     /* ..........Destination section............ */

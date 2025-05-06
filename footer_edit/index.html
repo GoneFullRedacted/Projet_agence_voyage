@@ -41,11 +41,9 @@
 
     
     <header>
-        <div class="video_container">
-            <video autoplay muted loop id="myVideo">
-                <source src="img/header_bg_animated.mp4" type="video/mp4">
-            </video>
-        </div>
+        <video autoplay muted loop id="myVideo" class="video_container">
+            <source src="img/header_bg_animated.mp4" type="video/mp4">
+        </video>
         <nav id="mainNav" class="header_nav">
             <a href="#" class="header_logo"><img src="img/explore_with_us-no_bg.svg" alt=""></a>
             <ul class="header_menu">
@@ -61,70 +59,70 @@
             <p>Préparez-vous à sortir de votre zone de confort et à embarquer pour des aventures hors du commun !</p>
             <p>Nous sommes là pour inspirer et guider les aventuriers dans leur quête de destinations uniques et méconnues.</p>
         </article>
-        <div class="search flex self-center items-center bg-black opacity-65 z-30 text-white w-fit p-5 gap-5 mb-16">
-            <p class="mr-10">Saisissez votre</p>
+        <div class="search">
+            <p>Saisissez votre</p>
             <form action="" method="get">
                 <div class="">
-                    <input type="text" name="name" id="name" placeholder="Ville de départ" required />
+                    <input type="text" name="name" id="name" placeholder="Ville de départ" required class="search_input"/>
                 </div>
                 <div class="">
-                    <input type="text" name="text" id="text" placeholder="Durée" required />
+                    <input type="text" name="text" id="text" placeholder="Durée" required class="search_input"/>
                 </div>
-                <div class="">
-                    <input type="date" name="date" id="date" placeholder="Date de départ" required />
+                <div>
+                    <input type="date" name="date" id="date" placeholder="Date de départ" required class="search_input"/>
                 </div>
                 <div>
                     <input type="submit" value="Rechercher" class="search_button"/>
                 </div>
             </form>
         </div>
-        <div class="menu-container">
-            <div class="menu-group">
+        <div class="travel_plan">
+            <div class="travel_menu">
                 <button class="menuButton" data-target="menu1">Séjours</button>
-                <div id="menu1" class="menu">
-                    <a href="#">blablablablablabla</a>
-                    <a href="#">Lien 2</a>
-                    <a href="#">Lien 3</a>
+                <div id="menu1" class="menu hidden">
+                    <a href="#">Socotra</a>
+                    <a href="#">Yakoutsk</a>
+                    <a href="#">Danakil</a>
                 </div>
             </div>
 
-            <div class="menu-group">
+            <div class="travel_menu">
                 <button class="menuButton" data-target="menu2">Vols</button>
-                <div id="menu2" class="menu">
-                    <a href="#">blablablablablabla</a>
-                    <a href="#">Lien 2</a>
-                    <a href="#">Lien 3</a>
+                <div id="menu2" class="menu hidden">
+                    <a href="#">Air Space</a>
+                    <a href="#">Step Air</a>
+                    <a href="#">Air Us</a>
                 </div>
             </div>
 
-            <div class="menu-group">
-                <button class="menuButton" data-target="menu3">Circuits</button>
-                <div id="menu3" class="menu">
-                    <a href="#">blablablablablabla</a>
-                    <a href="#">Lien 2</a>
-                    <a href="#">Lien 3</a>
+            <div class="travel_menu">
+                <button class="menuButton" data-target="menu3">Croisières</button>
+                <div id="menu3" class="menu hidden">
+                    <a href="#">Mer.Rouge</a>
+                    <a href="#">Danube</a>
+                    <a href="#">Léna</a>
                 </div>
             </div>
 
-            <div class="menu-group">
-                <button class="menuButton" data-target="menu4">Croisières</button>
-                <div id="menu4" class="menu">
-                    <a href="#">blablablablablabla</a>
-                    <a href="#">Lien 2</a>
-                    <a href="#">Lien 3</a>
+            <div class="travel_menu">
+                <button class="menuButton" data-target="menu4">Hôtels</button>
+                <div id="menu4" class="menu hidden">
+                    <a href="#">Summer Land</a>
+                    <a href="#">Sterkh</a>
+                    <a href="#">Serdo</a>
                 </div>
             </div>
 
-            <div class="menu-group">
+            <div class="travel_menu">
                 <button class="menuButton" data-target="menu5">Locations</button>
-                <div id="menu5" class="menu">
-                    <a href="#">blablablablablabla</a>
-                    <a href="#">Lien 2</a>
-                    <a href="#">Lien 3</a>
+                <div id="menu5" class="menu hidden">
+                    <a href="#">CarExpress</a>
+                    <a href="#">SpeedRide</a>
+                    <a href="#">EcoMotion</a>
                 </div>
             </div>
 
-            <a href="#"><button class="plan-button">Planifiez votre voyage</button></a>
+            <a href="#"><button class="plan_button">Planifiez votre voyage</button></a>
         </div>
     </header>
 
@@ -184,7 +182,7 @@
                 <div class="flip-card perspective">
                     <div class="flip-inner">
                         <div class="flip-front backface-hidden">
-                            <img src="img/bg_header_normal.jpg" alt="Front Image"/>
+                            <img src="img/bg_danikil_ethiopia (1).jpg" alt="Front Image"/>
                         </div>
                         <div class="flip-back">
                             <a href="#">
@@ -195,7 +193,7 @@
                 </div>
                 <figcaption class="destination_place">
                     <a href="#">
-                        <h4>🏝 Socotra, Yémen</h4>
+                        <h4>🌋 Danakil, Éthiopie</h4>
                         <p>
                             Entrez dans les entrailles de la Terre : le Danakil vous dévoile ses paysages de feu et de sel, 
                             entre mystère et beauté brutale.                            

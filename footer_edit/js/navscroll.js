@@ -1,12 +1,22 @@
 
-    const nav = document.getElementById("mainNav");
+  //   const nav = document.getElementById("mainNav");
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 0) {
-      nav.classList.remove("bg-transparent");
-      nav.classList.add("bg-zinc-200");
+  // window.addEventListener("scroll", () => {
+  //   if (window.scrollY > 0) {
+  //     nav.classList.remove("bg-transparent");
+  //     nav.classList.add("bg-zinc-200");
+  //   } else {
+  //     nav.classList.remove("bg-zinc-200");
+  //     nav.classList.add("bg-transparent");
+  //   }
+  // });
+
+window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("mainNav");
+
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = "#D9D9D9";
     } else {
-      nav.classList.remove("bg-zinc-200");
-      nav.classList.add("bg-transparent");
+        navbar.style.backgroundColor = "transparent";
     }
-  });
+});
