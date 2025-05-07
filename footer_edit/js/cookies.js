@@ -1,16 +1,10 @@
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
-        document.getElementById("cookieModal").classList.add("show");
-    }, 500);
+        document.getElementById("CookieBox").classList.add("show");
+    }, 500); // wait 0.5s before showing
 });
 
-document.querySelector('.accept').addEventListener('click', function() {
-    alert('Cookies acceptés');
-    document.getElementById("cookieModal").style.display = 'none';
-});
-
-document.querySelector('.reject').addEventListener('click', function() {
-    alert('Cookies non essentiels rejetés');
-    document.getElementById("cookieModal").style.display = 'none';
-});
+function hideCookieBox() {
+    document.getElementById("CookieBox").classList.remove("show");
+}
