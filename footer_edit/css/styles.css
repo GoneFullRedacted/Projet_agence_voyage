@@ -4,6 +4,11 @@
         padding: 0;
         box-sizing: border-box;
     }
+
+    body {
+        display: 100vh;
+        font-size: 16px;
+    }
 /* ......................................... */
     
 /* ...hover animation for interactive elements........ */
@@ -43,7 +48,7 @@
     }
 
     /* .....box animation...... */
-    #socotra_tour:hover,
+    /* #socotra_tour:hover,
     .carousel_wheather_advice article:hover,
     .tour_practical_advice:hover,
     .tourist_spots:hover,
@@ -55,7 +60,7 @@
     .service:hover, 
     .review:hover {
         transform: translateY(-10px);
-    }
+    } */
 
 
 
@@ -95,19 +100,12 @@
         color: #3E3E3E;
         padding: 15px;
         box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
-        box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
         border-radius: 40px;
         bottom: -100px;
         right: 0;
         transform: translateX(-5%);
         transition: bottom 0.8s ease-in-out, opacity 0.8s ease-in-out, filter 0.8s ease-in-out;
-        bottom: -100px;
-        right: 0;
-        transform: translateX(-5%);
-        transition: bottom 0.8s ease-in-out, opacity 0.8s ease-in-out, filter 0.8s ease-in-out;
         display: flex;
-        opacity: 0;
-        filter: blur(5px); /*..add blur..*/
         opacity: 0;
         filter: blur(5px); /*..add blur..*/
         flex-direction: column;
@@ -189,9 +187,8 @@
         justify-content: center;
         text-align: center;
         gap: 2.5rem;
-        gap: 2.5rem;
         position: relative;
-        padding-bottom: 25em;
+        padding-bottom: 12em;
         padding-top: 10rem;
     }
 
@@ -283,8 +280,9 @@
     .scrolled {
         background: rgba(255, 255, 255, 0.3); /* bg transparent */
         backdrop-filter: blur(8px); /* add blur*/
+        box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
         padding: 5px;
-        max-width: 820px;
+        width: 820px;
         height: 65px;
         display: flex;
         justify-content: center;
@@ -294,7 +292,6 @@
         left: 50%;
         transform: translateX(-50%); /* horizontal centering */
         transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        width: 100%;
         margin-top: 8px;
         gap: 2rem;
 
@@ -505,7 +502,7 @@
     #scrollTopBtn {
         position: fixed;
         background-color: #131C46;
-        z-index: 100;
+        z-index: 1000;
         bottom: 30px;
         right: 30px;
         width: 3rem;
@@ -738,10 +735,13 @@
         margin-top: 8.75rem;
     }
     .box_destinations {
+        display: flex;
+        flex-direction: column;
         max-width: 1100px;
         background-color: #d9d9d9;
         padding: 3.75rem;
-        margin: 5.625rem auto 2.5rem;
+        gap: 5rem;
+        margin: 5rem auto 2.5rem;
         border-radius: 6.25rem;
         box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
         animation: transform ease 3s;
@@ -751,7 +751,6 @@
         font-family: 'montserrat-bold';
         font-size: 1.6rem;
         color: #131C46;
-        margin-bottom: 5rem;
     }
 
     .destination_card {
@@ -759,10 +758,6 @@
         justify-content: center;
         align-items: center;
         gap: 3.75rem;
-    }
-
-    .destination_card:nth-child(3) {
-        margin: 100px 0;
     }
 
     .flip-front img {
@@ -789,7 +784,7 @@
         font-family: 'montserrat-bold';
         font-size: 1.8rem;
         color: #131C46;
-        margin-bottom: 1.875rem;
+        margin-bottom: 1.2rem;
     }
 
     .destination_place p {
@@ -798,7 +793,7 @@
         text-align: justify;
         color: #3E3E3E;
         background-color: #F2EEEE;
-        padding: 0.9375rem;
+        padding: 0.9rem;
         border-radius: 20px;
         box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.3);
     }
@@ -806,16 +801,10 @@
     .destination_place p strong {
         font-family: 'poppins-semibold';
         color: #131C46; 
-    }
-
-    .arrow_space_right{
-        margin-right: 10rem; 
-        font-size: 2.5rem;
-    }
-
-    .arrow_space_left{
-        font-size: 2.5rem;
-        margin-left: 10rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 11.8rem;
+        margin-top: 0.4rem;
     }
 
     /* ...........rotation zone............. */
@@ -1002,6 +991,9 @@
 
     /* ........services section............ */
       #services {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
         text-align: center;
         margin: 5rem auto;
         width: 100%;
@@ -1013,7 +1005,6 @@
         font-family: 'montserrat-extrabold';
         font-size: 3.45rem;
         font-weight: 700;
-        padding: 1.875rem;
     }
 
     .box_services_A {
@@ -1040,10 +1031,13 @@
         gap: 0.625rem;
         border-radius: 20px;
         background-color: #d9d9d9;
-        margin-top: 3.125rem;
         box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
         padding: 0.9rem;
         animation: transform ease 3s;
+    }
+
+    .box_services_B .service:nth-child(3) {
+        margin-top: 4rem;
     }
     
     .service_content {
@@ -1419,4 +1413,178 @@
         text-decoration: none;
         text-align: center;
         cursor: pointer;
+    }
+
+
+
+
+
+
+/* ................Tablet display.................... */
+
+    @media (max-width: 1024px) {
+
+        /*............navigation...... */
+        .header_nav {
+            height: 4.5rem;
+            padding: 1rem 4%;
+        }
+
+        .header_logo img {
+            height: 4rem;
+        }
+
+        /*.......navigation links........*/
+        .header_menu {
+            gap: 2rem;
+        }
+
+        .header_menu a {
+            font-size: 1.2rem;
+        }
+
+        .scrolled .header_menu {
+            gap: 2rem;
+        }
+
+        /* ..........Destination section............ */
+        #destination h2 {
+            font-size: 3rem;
+            margin-top: 8rem;
+        }
+
+        .box_destinations {
+            max-width: 850px;
+            padding: 2rem;
+            margin: 5rem auto 2rem;
+            border-radius: 5rem;
+            gap: 2.5rem;
+        }
+
+        .box_destinations h4 {
+            font-size: 1.3rem;
+            margin: 1rem 0 0;
+        }
+
+        .destination_card {
+            gap: 1.5rem;
+        }
+
+
+        .flip-front img {
+            width: 400px;
+            border-radius: 35px;
+        }
+
+        .destination_place h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .destination_place p {
+            font-size: 1.1rem;
+            padding: 0.7rem;
+        }
+
+        .destination_place p strong {
+            gap: 10rem;
+        }
+
+        /* ...........rotation zone............. */
+        .perspective {
+            perspective: 800px;
+        }
+        
+        .flip-inner {
+            width: 400px;
+            height: 300px;
+        }
+
+        /* ........map view main page........... */
+        .maptour {
+            width: 400px;
+            height: 300px;
+            border-radius: 35px;
+        }
+
+        .box_services_A, 
+        .box_services_B {
+            gap: 5rem;
+        }
+
+        /* .....change service card disposition and remove margin-top......... */
+        .box_services_B .service:nth-child(1) {
+            flex-direction: row-reverse;
+        }
+
+        .box_services_B .service:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+
+        .box_services_B .service:nth-child(3) {
+            margin-top: 0;
+        }
+    }
+
+
+    @media (max-width: 820px) {
+        body {
+            font-size: 14px;
+        }
+
+        /*............navigation...... */
+        .header_nav {
+            height: 4.5rem;
+            padding: 0.5rem 1%;
+            justify-content: space-evenly;
+        }
+
+        .header_logo img {
+            height: 3rem;
+        }
+
+        /*.......navigation links........*/
+        .header_menu {
+            gap: 1.8rem;
+        }
+
+        .header_menu a {
+            font-size: 1.15rem;
+        }
+
+        .scrolled {
+            width: 730px;
+            gap: 0.5rem;
+        }
+
+        .scrolled .header_menu {
+            gap: 1.8rem;
+        }
+
+        /* ..........Destination section............ */
+        #destination h2 {
+            font-size: 3rem;
+            margin-top: 8rem;
+        }
+
+        .box_destinations {
+            max-width: 100%;
+            padding: 1.5rem;
+            margin: 4rem auto 0;
+            border-radius: 0;
+        }
+
+        .destination_card {
+            gap: 1.5rem;
+        }
+
+        .preview-container {
+            display: none;
+        }
+    }
+
+
+
+    @media (max-width: 656px) {
+
     }
