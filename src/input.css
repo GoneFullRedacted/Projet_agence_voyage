@@ -90,8 +90,8 @@
   
   .carousel-images {
     position: relative;
-    height: 80%;
-    overflow: hidden;
+    /* height: 80%;
+    overflow: hidden; */
   }
   
   .carousel-images img {
@@ -206,3 +206,23 @@ clip-path: polygon( 98.979% 22.937%,98.764% 22.746%,98.764% 22.746%,98.183% 22.3
     transform: scale(1.25);
     color: white;
   }
+
+
+
+    /* ........scrollbar width......... */
+    .description::-webkit-scrollbar {
+        width: 4px;
+        max-height: 50px;
+    }
+
+    /* ......cursor color....... */
+    .description::-webkit-scrollbar-thumb {
+        background: #131C46;
+        border-radius: 10px;
+    }
+    
+    /* .........scrollbar background...... */
+    .description::-webkit-scrollbar-track {
+        background: #fff;
+        margin: 50px 0;
+    }

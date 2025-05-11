@@ -1,22 +1,29 @@
 
-  //   const nav = document.getElementById("mainNav");
+// window.addEventListener("scroll", function () {
+//     const navbar = document.getElementById("mainNav");
 
-  // window.addEventListener("scroll", () => {
-  //   if (window.scrollY > 0) {
-  //     nav.classList.remove("bg-transparent");
-  //     nav.classList.add("bg-zinc-200");
-  //   } else {
-  //     nav.classList.remove("bg-zinc-200");
-  //     nav.classList.add("bg-transparent");
-  //   }
-  // });
+//     if (window.scrollY > 50) {
+//         navbar.style.backgroundColor = "#D9D9D9";
+//         navbar.style.boxShadow = "2px 4px 32px 5px rgba(0, 0, 0, 0.2)";
+//     } else {
+//         navbar.style.backgroundColor = "transparent";
+//         navbar.style.boxShadow = "none";
+//     }
+// });
 
-window.addEventListener("scroll", function () {
-    const navbar = document.getElementById("mainNav");
 
-    if (window.scrollY > 50) {
-        navbar.style.backgroundColor = "#D9D9D9";
+window.addEventListener("scroll", function() {
+    let navbar = document.getElementById("mainNav");
+    let logo = document.getElementById("logo");
+    let home = document.getElementById("home");
+
+    if (window.scrollY > 100) {
+        navbar.classList.add("scrolled");
+        logo.style.display = "none"; // hide logo
+        home.style.display = "block"; // home display
     } else {
-        navbar.style.backgroundColor = "transparent";
+        navbar.classList.remove("scrolled");
+        logo.style.display = "block"; // logo display
+        home.style.display = "none"; // hide home
     }
 });

@@ -1,6 +1,6 @@
 // Initialisation de la carte
 const map = L.map('map', {
-    center: [48.8566, 2.3522], // Paris
+    center: [12.6490, 54.0200], // Yemen
     zoom: 16,
     dragging: false,             // désactive le drag
     touchZoom: false,            // désactive le zoom tactile
@@ -9,7 +9,7 @@ const map = L.map('map', {
     boxZoom: false,              // désactive le zoom par sélection
     keyboard: false,             // désactive le contrôle clavier
     zoomControl: false,          // retire les boutons +/-
-  }).setView([48.8566, 2.3522], 16);
+  }).setView([12.6490, 54.0200], 16);
   
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19
@@ -17,13 +17,14 @@ const map = L.map('map', {
   
   // Données des points d'intérêt
   const points = [
-      { id: 1, name: "Hôtel Central", coords: [48.8566, 2.3522], type: "hotel", image: "./medias/maprelated/hotel-presidente-4s.jpg", description: "Un hôtel confortable au centre-ville."},
-      { id: 2, name: "Bar du Coin", coords: [48.8570, 2.3540], type: "bar", image: "./medias/maprelated/bar-paris.jpg", description: "Un superbe bar vintage situé à deux pas d'un endroit magnifique" },
-      { id: 3, name: "Restaurant Le Gourmet", coords: [48.8585, 2.3510], type: "restaurant" },
-      { id: 4, name: "Tour Eiffel", coords: [48.8584, 2.2945], type: "lieu" },
-      { id: 5, name: "Tour Eiffel", coords: [48.8584, 2.2945], type: "lieu" },
-      { id: 6, name: "Tour Eiffel", coords: [48.8584, 2.2945], type: "lieu" },
-      { id: 7, name: "Tour Eiffel", coords: [48.8584, 2.2945], type: "lieu" }
+      { id: 1, name: "Hadibo", coords: [12.6490, 54.0200], type: "lieu", image: "./medias/maprelated/hadibo_socotra.jpg", description: "Centre administratif et logistique de l'île, point de départ principal"},
+      { id: 2, name: "Plage de Qalansiyah", coords: [12.6535, 53.4606], type: "lieu", image: "./medias/maprelated/qalansiyah_beach.jpg", description: "Baie turquoise bordée de sable blanc, village de pêcheurs traditionnel." },
+      // { id: 3, name: "Dunes de sable de Detwah", coords: [12.6667, 53.4483], type: "lieu" , image: "./medias/maprelated/detwah_yemen.webp", description: "Lagune protégée, paysage surnaturel, flore endémique unique." },
+      { id: 4, name: "Plateau de Diksam", coords: [12.4750, 54.0075], type: "lieu" , image: "./medias/maprelated/diksam_socotra.webp", description: "Forêt de dragoniers, formations rocheuses abruptes, vue panoramique." },
+      // { id: 5, name: "Vallée de Firhmin", coords: [12.4708, 54.0264], type: "lieu" , image: "./medias/maprelated/firhmin_socotra.jpg", description: "Concentration de Dracaena cinnabari, habitat endémique" },
+      // { id: 6, name: "Grotte de Hoq", coords: [12.5650, 54.3333], type: "lieu" , image: "./medias/maprelated/hoqcave_socotra.jpg", description: "Cavité calcaire de plusieurs kilomètres, inscriptions antiques." },
+      { id: 7, name: "Parc national du Canyon d'Ayhaft", coords: [12.6408, 54.0314], type: "lieu" , image: "./medias/maprelated/ayhaft_socotra.webp", description: "Source d’eau douce dans une gorge, biodiversité rare." },
+      // { id: 8, name: "Plage d’Arher", coords: [12.6119, 54.4453], type: "lieu" , image: "./medias/maprelated/arher_socotra.jpg", description: "Rencontre entre dunes géantes et océan, site d’observation des étoiles." }
   ];
   
   // Légende associée
@@ -68,16 +69,16 @@ const map = L.map('map', {
   
       // Création des éléments HTML liés
       const navButton = document.createElement('button');
-      navButton.innerText = point.id;
+      navButton.innerText = point.name;
       navButton.dataset.id = point.id;
       navItems.appendChild(navButton);
   
-      const legendItem = document.createElement('div');
-      legendItem.id = `legend-${point.id}`;
-      legendItem.className = 'legend-item';
-      legendItem.innerText = `${point.name} (${point.type})`;
-      legendItem.style.display = 'none';
-      legendContainer.appendChild(legendItem);
+      // const legendItem = document.createElement('div');
+      // legendItem.id = `legend-${point.id}`;
+      // legendItem.className = 'legend-item';
+      // legendItem.innerText = `${point.name} (${point.type})`;
+      // legendItem.style.display = 'none';
+      // legendContainer.appendChild(legendItem);
   
     // Navigation depuis bouton vers carte
       navButton.addEventListener('click', () => {
@@ -103,7 +104,7 @@ const map = L.map('map', {
     .map(point => point.coords);
   
     const tourButton = document.createElement('button');
-    tourButton.innerText = 'Tour complet';
+    tourButton.innerText = 'Tour';
     tourButton.addEventListener('click', startTour);
     tourButton.classList.add('tour-button');
     navItems.appendChild(tourButton);
