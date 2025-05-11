@@ -118,10 +118,6 @@
         bottom: 20px;
         opacity: 1;
         filter: blur(0px); /*..delete blur.. */
-    .show {
-        bottom: 20px;
-        opacity: 1;
-        filter: blur(0px); /*..delete blur.. */
     }
 
     .cookie .content {
@@ -164,7 +160,6 @@
     }
 
     .cookie button {
-    .cookie button {
         background-color: #131C46;
         color: #fff;
         border: none;
@@ -175,7 +170,6 @@
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     
-    .cookie button.reject {
     .cookie button.reject {
         background-color: #3E3E3E;
         border-radius: 0 20px 20px 0;
