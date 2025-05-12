@@ -387,7 +387,21 @@
     }
 
 
+    @media (max-width: 820px) {
+        /* ........socotra destination contain........ */
+        #socotra_tour {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 1rem;
+            border-radius: 30px;
+        }
 
+        .carousel-images {
+            height: 35vh;
+        }
+
+    }
 
 
     

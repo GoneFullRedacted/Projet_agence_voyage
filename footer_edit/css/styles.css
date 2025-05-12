@@ -339,7 +339,8 @@
         width: fit-content;
         align-self: center;
         box-shadow: 0 0 10px black;
-        border-radius: 30px;
+        border-radius: 7rem 1rem;
+        padding: 1.5rem 2rem;
     }
 
     .hero_step p {
@@ -565,7 +566,7 @@
         background-color: rgba(217, 217, 217, 0.6);
         backdrop-filter: blur(8px); /* add blur*/
         padding: 15px;
-        max-width: 400px;
+        max-width: 380px;
         box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
         display: none;
         z-index: 1000;
@@ -768,7 +769,9 @@
     }
 
     .destination_place {
-        width: 400px;
+        display: flex;
+        justify-content: center;
+        width: 380px;
         background-color: #d9d9d9;
         padding: 1.25rem;
         border-radius: 20px;
@@ -1472,7 +1475,7 @@
 
 
         .flip-front img {
-            width: 400px;
+            width: 380px;
             border-radius: 35px;
         }
 
@@ -1496,13 +1499,13 @@
         }
         
         .flip-inner {
-            width: 400px;
+            width: 380px;
             height: 300px;
         }
 
         /* ........map view main page........... */
         .maptour {
-            width: 400px;
+            width: 380px;
             height: 300px;
             border-radius: 35px;
         }
@@ -1585,6 +1588,325 @@
 
 
 
+    @media (max-width: 768px) {
+
+        /*............navigation...... */
+        .header_nav {
+            height: 4.5rem;
+            padding: 0.5rem 1%;
+            justify-content: none;
+        }
+
+        .header_logo img {
+            height: 3rem;
+            margin-left: -50px;
+        }
+
+        /*.......navigation links........*/
+        .header_menu {
+            gap: 1.3rem;
+        }
+
+        .plan_button {
+            padding: 1rem;
+        }
+
+        .scrolled .header_menu {
+            gap: 1.4rem;
+        }
+
+        /* ..........advise section............. */
+        #advice {
+            max-width: 650px;
+        }
+
+        /* ......Expanded width (640px with scale= 800px)......... */
+        .practical_advice:hover {
+            transform: scale(1.1);
+            margin-left: 10px;
+        }
+
+        .advice_content p {
+            font-size: 0.94rem;
+
+        }
+    }
+
+
     @media (max-width: 656px) {
 
+        body {
+            font-size: 12px;
+        }
+
+        /*............navigation...... */
+        .header_menu {
+            display: none;
+        }
+
+        /* ........hero title.......... */
+        header h1 {
+            font-size: 1.4rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .hero_step p {
+            font-size: 1rem;
+            width: 26ch;
+            padding: 1rem;
+        }
+
+        /*........search form.......... */
+        .search {
+            display: flex;
+            flex-direction: column;
+
+            width: fit-content;
+            gap: 0.5rem;
+            border-radius: 50px;
+        }
+
+        .search form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .search_button {
+            border-radius: 50px;
+        }
+
+        /* ..........travel_plan container..... */
+        .travel_plan {
+            display: flex;
+            flex-direction: column;
+
+            width: fit-content;
+            padding-left: 0;
+            gap: 1rem;
+            border-radius: 50px;
+        }
+
+        /* .....expanded menu....... */
+        .menu {
+            background: #000;
+            border-radius: 20px;
+        }
+
+        .plan_button {
+            border-radius: 50px;
+            margin-left: 0rem;
+        }
+
+        #destination h2 {
+            font-size: 2.5rem;
+            margin-top: 8rem;
+        }
+
+        .box_destinations {
+            max-width: 100%;
+            padding: 1.5rem;
+            margin: 4rem auto 0;
+            border-radius: 0;
+        }
+
+        .destination_card {
+            flex-direction: column;
+            gap: 0rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .box_destinations h4 {
+            font-size: 1.1rem;
+        }
+
+
+
+        .flip-front img {
+            width: 350px;
+            border-radius: 0 0 35px 35px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .destination_place h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .destination_place {
+            padding: 0;
+        }
+
+        .destination_place p {
+            font-size: 1rem;
+            width: 350px;
+            border-radius: 35px 35px 0 0;
+        }
+
+        .destination_place p strong {
+            display: none;
+        }
+
+        /* ...........rotation zone............. */
+        .perspective {
+            perspective: 380px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .flip-inner {
+            width: 350px;
+            border-radius: 0 0 35px 35px;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* ........map view main page........... */
+        .maptour {
+            width: 350px;
+            padding: 0;
+            margin: 0;
+            border-radius: 0 0 35px 35px;
+        }
+
+        .destination_card:nth-child(2) {
+            flex-direction: column-reverse;
+        }
+
+        .destination_card:nth-child(4) {
+            flex-direction: column-reverse;
+        }
+
+        /* ..........advise section............. */
+        #advice {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 6.25rem auto;
+        }
+
+        .practical_advice {
+            display: flex;  
+            flex-direction: column;
+            align-items: center;   
+            transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275); /*Ease with light ease-bounce */
+            gap: 50px;
+        }
+
+        .advice_title h4 {
+            padding-top: 40px;
+        }
+
+        .practical_advice:hover {
+            border-radius: 20px;
+            width: 300px;
+            height: 450px;
+            animation: none;
+        }
+
+          /* ......hide advice content....... */
+        .advice_content {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            padding: 0 16px;
+            transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .practical_advice:hover .advice_content {
+            max-height: 450px; 
+            opacity: 1;
+        }
+
+
+        /* ........services section............ */
+        #services h3 {
+            font-size: 2.5rem;
+        }
+        .service img {
+            display: none;
+        }
+
+  /* .................Contact section................ */
+    #contact {
+        background-color: #d9d9d9;
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding: 4.3rem 2%;
+        flex-direction: column;
+    }
+    
+    #contact h2 {
+        color: #333;
+        font-family: 'montserrat-extrabold';
+        font-size: 1.5rem;
+
+    }
+
+    #contact h2 span {
+        font-family: 'montserrat-bold';
+        font-size: 1rem;
+    }
+
+    .contact_form {
+        width: 400px;
+        border-collapse: collapse;
+        box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.2);
+
+    }
+    
+    .message {
+        margin-top: 0.625rem;
+        width: 400px;
+        font-family: 'montserrat-bold';
+        font-size: 1.1rem;
+        color: #3f3e3e;
+        font-weight: 600;
+        text-align: center;
+
+    }
+    
+    .message textarea {
+        font-size: 1rem;
+        width: 400px;
+        height: 100px;
+        border: none;
+        resize: none;
+        padding: 0.6rem;
+        margin-top: 2px;
+    }
+    
+    .email {
+        width: 400px;
+    }
+    
+    .email input {
+        font-size: 1rem;
+        width: 300px;
+        padding: 0.625rem 0.6rem;
+    }
+    
+    /* ........contact send button......... */
+    .send_button {
+        border-radius: 20px 0 20px 0;
+        background-color: #3e3e3e;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        color: #fff;
+        font-family: 'montserrat-bold';
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .send_button:hover {
+        background-color: #131c46;
+    }
+    
     }
