@@ -36,7 +36,7 @@
 
 <!---------------------SECTION DESTINATION CAROUSSEL--------------------->
 
-    <section class="flex gap-8 bg-[#D9D9D9] items-center p-10 mt-16 mx-auto rounded-[100px] max-w-7xl shadow-[2px_4px_32px_5px_rgba(0,0,0,0.2)]"> 
+    <section class="flex flex-col md:flex-row gap-8 bg-[#D9D9D9] items-center p-10 mt-16 mx-auto rounded-[100px] max-w-7xl shadow-[2px_4px_32px_5px_rgba(0,0,0,0.2)]"> 
         <div class="max-w-[50ch] mx-auto ">
             <h1 class="text-3xl font-['montserrat-semibold'] text-center text-[#131C46]">Venez découvrir Socotra</h1>
             <p class="description max-w-[45ch] max-h-[20ch] text-justify text-[#333] m-[1vw] shadow-lg p-2.5 mt-6 font-[poppins-regular] border-0 bg-[#F2EEEE] rounded-3xl overflow-y-auto">
@@ -133,26 +133,26 @@
 
 <!---------------------Section infos voyages (take care of)--------------------->
 
-    <section id="recommandation" class="bg-[#D9D9D9] flex justify-evenly gap-5 pt-30 w-full font-[poppins-medium]">
+    <section id="recommandation" class="bg-[#D9D9D9] flex justify-evenly gap-5 pt-30 w-[100vw] font-[poppins-medium]">
         <div class="flex flex-col items-center w-1/4">
             <img src="./medias/logos/passport.svg" alt="" class="w-1/6">
             <div class="h-1 bg-black w-[75%] my-5"></div>
             <img src="./medias/logos/green_checkmark.webp" alt="" class="w-1/6">
-            <p class="max-w-[25ch] pt-10">Un passeport en cours de validité est obligatoire pour entrer au Yémen. Aucun visa délivré à l’arrivée. Demande préalable nécessaire.</p>
+            <p class="max-w-[25ch] pt-10 text-[14px] md:text-2xl">Un passeport en cours de validité est obligatoire pour entrer au Yémen. Aucun visa délivré à l’arrivée. Demande préalable nécessaire.</p>
         </div>
         <div class="flex flex-col items-center w-1/4">
             <img src="./medias/logos/vaccine.svg" alt="" class="w-1/6">
             <div class="h-1 bg-black w-[75%] my-5"></div>
             <img src="./medias/logos/green_checkmark.webp" alt="" class="w-1/6">
-            <h5 class="pt-5 font-bold">Recommandé :</h5>
-            <ul class="pt-5">
+            <h5 class="pt-10 font-bold text-[14px] md:text-2xl">Recommandé </h5>
+            <ul class="pt-5 text-[14px] md:text-2xl">
                 <li>Hépatite A</li>
                 <li>Fièvre typhoïde</li>
                 <li>Tétanos</li>
                 <li>Rage</li>
             </ul>
         </div>
-        <div class="flex flex-col items-center w-1/4">
+        <div class="md:flex hidden flex-col items-center w-1/4">
             <img src="./medias/logos/currency.svg" alt="" class="w-1/6">
             <div class="h-1 bg-black w-[75%] my-5"></div>
 <!---------------------Bloc conversion devises -------------------->
@@ -192,7 +192,7 @@
             <img src="./medias/logos/phone.svg" alt="" class="w-1/6">
             <div class="h-1 bg-black w-[75%] my-5"></div>
             <img src="./medias/logos/green_checkmark.webp" alt="" class="w-1/6">
-            <p class="max-w-[25ch] pt-10">Réseau mobile limité. Connexion internet instable voire inexistante hors de Hadibu. Prévoir batteries externes et cartes SIM locales.</p>
+            <p class="max-w-[25ch] pt-10 text-[14px] md:text-2xl">Réseau mobile limité. Connexion internet instable voire inexistante hors de Hadibu. Prévoir batteries externes et cartes SIM locales.</p>
 
         </div>
     
@@ -217,13 +217,13 @@
 
 <!---------------------Footer------------------------>
 
-<footer class="bg-[#D9D9D9] p-[10px] pt-30" >
+<footer class="bg-[#D9D9D9] p-[10px]" >
     <div class="flex w-full items-center flex-row gap-[50px] justify-center">
         <div class="gap-[50px] mb-[40px]">
             <article class="flex text-left gap-[50px] text-[#333] flex-wrap mb-[40px] ">
                 <figure>
-                    <h3 class="font-['montserrat-bold'] text-[20px] ">Nos destinations</h3>
-                    <ul class="font-['montserrat-medium'] text-[17px] mt-[10px] leading-[30px]">
+                    <h3 class="font-['montserrat-bold'] md:text-[20px] text-[16px] ">Nos destinations</h3>
+                    <ul class="font-['montserrat-medium'] md:text-[17px] text-[14px] mt-[10px] leading-[30px]">
                         <li><a href="#" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Nouvelle-guinée</a></li>
                         <li><a href="#" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Egypte</a></li>
                         <li><a href="#" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Amazonie</a></li>
@@ -235,8 +235,8 @@
                 </figure>
 
                 <figure>
-                    <h3 class="font-['montserrat-bold'] text-[20px] ">Nos services</h3>
-                    <ul class="font-['montserrat-medium'] text-[17px] mt-[10px] leading-[30px]">
+                    <h3 class="font-['montserrat-bold'] md:text-[20px] text-[16px] ">Nos services</h3>
+                    <ul class="font-['montserrat-medium'] md:text-[17px] text-[14px] mt-[10px] leading-[30px]">
                         <li><a href="#" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Voyage personnalisé</a></li>
                         <li><a href="#" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Assurance voyage</a></li>
                         <li><a href="#" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Location hôtel</a></li>
@@ -247,8 +247,8 @@
 
                 <figure>
                     <figcaption>
-                        <h3 class="font-['montserrat-bold'] text-[20px] ">Contacts</h3>
-                        <p class="font-['montserrat-medium'] text-[17px] mt-[10px] leading-[30px]">
+                        <h3 class="font-['montserrat-bold'] md:text-[20px] text-[16px] ">Contacts</h3>
+                        <p class="font-['montserrat-medium'] md:text-[17px] text-[14px] mt-[10px] leading-[30px]">
                             <a href="#contact" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Fix : (+33) 01 23 45 67 89</a><br>
                             <a href="#contact" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Courriel : evasion@voyage.fr</a><br>
                             <a href="#contact" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Courrier : 4 evasion, 58000</a>
@@ -256,8 +256,8 @@
                     </figcaption>
 
                     <figcaption>
-                        <h3 class="font-['montserrat-bold'] text-[20px] mt-[20px]">Nos partenaires</h3>
-                        <p class="font-['montserrat-medium'] text-[17px] mt-[10px] leading-[30px]">
+                        <h3 class="font-['montserrat-bold'] md:text-[20px] text-[16px] mt-[20px]">Nos partenaires</h3>
+                        <p class="font-['montserrat-medium'] md:text-[17px] text-[14px] mt-[10px] leading-[30px]">
                             <a href="#" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Evasion Airlines</a><br>
                             <a href="#" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Evasion Touristique</a>
                         </p>
@@ -265,8 +265,8 @@
                 </figure>
 
                 <figure>
-                    <h3  class="font-['montserrat-bold'] text-[20px]">Langues</h3>
-                    <ul class="font-['montserrat-medium'] text-[17px] mt-[10px] leading-[30px]">
+                    <h3  class="font-['montserrat-bold'] md:text-[20px] text-[16px]">Langues</h3>
+                    <ul class="font-['montserrat-medium'] md:text-[17px] text-[14px] mt-[10px] leading-[30px]">
                         <li><a href="index.html" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">Français</a></li>
                         <li><a href="en.html" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">English</a></li>
                         <li><a href="jpn.html" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">日本語</a></li>
@@ -281,17 +281,17 @@
                 <a href="https://www.visa.fr/"><img title="Visa" src="footer_edit/img/logo_visa.svg" alt="Footer logo" class="w-[45px] object-center my-auto flex-shrink-0 transition-transform duration-300 ease-in-out hover:scale-110"></a>
             </article>
 
-            <article class="flex items-center gap-[40px] justify-center flex-wrap">
-                <a href="#"><img src="footer_edit/img/explore_with_us-no_bg.svg" alt="Footer logo" class="w-[200px] object-center my-auto flex-shrink-0 transition-transform duration-300 ease-in-out hover:scale-110"></a>
-                <h3 class="font-['montserrat-bold'] text-[20px]">Restez connectés</h3>
+            <article class="flex items-center gap-[40px] justify-center flex-wrap mt-5 md:mt-auto">
+                <a href="#"><img src="footer_edit/img/explore_with_us-no_bg.svg" alt="Footer logo" class="w-[200px] object-center my-auto flex-shrink-0 transition-transform duration-300 ease-in-out hover:scale-110 md:block hidden"></a>
+                <h3 class="font-['montserrat-bold'] text-[20px] md:block hidden">Restez connectés</h3>
                 <a href="https://www.whatsapp.com/?lang=fr_FR"><img title="Whatsapp" src="footer_edit/img/logo_whatsapp.svg" alt="Footer logo" class="w-[45px] object-center my-auto flex-shrink-0 transition-transform duration-300 ease-in-out hover:scale-110"></a>
                 <a href="https://x.com/Accueil"><img title="TwitterX" src="footer_edit/img/logo_twitterx.svg" alt="Footer logo" class="w-[45px] object-center my-auto flex-shrink-0 transition-transform duration-300 ease-in-out hover:scale-110"></a>
                 <a href="https://www.facebook.com/"><img title="Facebook" src="footer_edit/img/logo_facebook.svg" alt="Footer logo" class="w-[45px] object-center my-auto flex-shrink-0 transition-transform duration-300 ease-in-out hover:scale-110"></a>
                 <a href="https://www.instagram.com/"><img title="Instagram" src="footer_edit/img/logo_instagram.svg" alt="Footer logo" class="w-[45px] object-center my-auto flex-shrink-0 transition-transform duration-300 ease-in-out hover:scale-110"></a>
             </article>
         </div>
-        <div class="w-[360px] mt-[-60px]">
-            <h2 class="font-['montserrat-bold'] text-[38px] text-[#333] mb-[10px]">À propos de nous</h2>
+        <div class="w-[360px] mt-[-60px] md:block hidden">
+            <h2 class="font-['montserrat-bold'] text-[38px] text-[#333] mb-[10px] ">À propos de nous</h2>
             <p class="font-['poppins-medium'] text-[15px] text-[#3E3E3E] text-justify mt-[10px] leading-[28px]">
                 Depuis des années, nous rêvons d'inspirer des voyageurs à dépasser les frontières classiques des guides touristiques. 
                 Notre objectif est simple : révéler la beauté cachée du monde et célébrer la diversité de la planète.<br><br> 
@@ -309,7 +309,6 @@
         <a href="#" class="transition-colors duration-300 hover:text-[#131c46] hover:font-bold">©évasion_voyage_by_C&S</a>
     </p>
 </footer>
-
 
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>    

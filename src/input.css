@@ -249,4 +249,32 @@ clip-path: polygon( 98.979% 22.937%,98.764% 22.746%,98.764% 22.746%,98.183% 22.3
         opacity: 1;
         transform: none;
       }
+
+      #nav-items{
+        max-width: 100vw;
+      }
+
+      #nav-items button:not(:last-child) {
+        background-color: #131C46;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 0 32px;
+        line-height: 12px;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 5vw;
+        }
+        #nav-items button:not(:first-child, :last-child){
+          margin-left: -12%;
+        }
+        #nav-items .tour-button{
+          display: none;
+        }
     }
