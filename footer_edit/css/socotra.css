@@ -180,7 +180,7 @@
     /* .......caroussel.......... */
     .carousel-images {
         position: relative;
-        height: 60vh;
+        height: 40vh;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0,0,0,0.4);
         border-radius: 2rem 2rem 0 0;
@@ -284,10 +284,10 @@
         cursor: pointer;
         /* display: inline-block; */
         font-weight: 600;
-        font-size: 18px;
+        font-size: 1rem;
         padding: 0 65px;
         margin-left: 5px;
-        line-height: 50px;
+        line-height: 2rem;
         /* text-align: center;
         text-decoration: none;
         user-select: none;
@@ -387,6 +387,32 @@
     }
 
 
+
+    @media (max-width: 1024px) {
+        /* ........socotra destination contain........ */
+        .carousel-images {
+            height: 25vh;
+        }
+
+        /* Conteneur carte + panneau */
+        #map-container {
+            display: flex;
+            flex-direction: column-reverse;
+            height: 55vh;
+            width: 100%;
+        }
+
+        #map {
+            display: flex;
+            width: 100%;
+        }
+
+        #nav-items {
+            width: 100%;
+        }
+
+    }
+
     @media (max-width: 820px) {
         /* ........socotra destination contain........ */
         #socotra_tour {
@@ -401,6 +427,16 @@
             height: 35vh;
         }
 
+        #info-panel {
+            width: 100%;
+        }
+    }
+
+
+    @media (max-width: 656px) {
+        .carousel-images {
+            height: 25vh;
+        }
     }
 
 

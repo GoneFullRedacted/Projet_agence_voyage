@@ -26,4 +26,14 @@ window.addEventListener("scroll", function() {
         logo.style.display = "block"; // logo display
         home.style.display = "none"; // hide home
     }
+
+    if (window.innerWidth < 656) {
+        logo.style.display = "block"; // logo display on screen < 656px
+        home.style.display = "block"; // home display on screen < 656px
+    }
 });
+
+// display burger menu
+function toggleMenu() {
+    document.querySelector(".header_nav").classList.toggle("active");
+}

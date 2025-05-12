@@ -8,3 +8,5 @@ document.addEventListener("DOMContentLoaded", function () {
 function hideCookieBox() {
     document.getElementById("CookieBox").classList.remove("show");
 }
+
+
