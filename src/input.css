@@ -112,7 +112,6 @@
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
   }
 
   #map {
@@ -225,4 +224,29 @@ clip-path: polygon( 98.979% 22.937%,98.764% 22.746%,98.764% 22.746%,98.183% 22.3
     .description::-webkit-scrollbar-track {
         background: #fff;
         margin: 50px 0;
+    }
+
+    @media(max-width:768px) {
+      .advice_title{
+        display: block;
+      }
+      .advice_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 75vw;
+        transition: none;
+        color: black;
+      }
+      .practical_advice {
+        width: 100vw;
+        opacity: 1;
+        animation: none;
+        flex-direction: column;
+      }
+      .advice_content p {
+        opacity: 1;
+        transform: none;
+      }
     }
